@@ -1,0 +1,1961 @@
+<!DOCTYPE html><!--  Last Published: Wed Sep 11 2024 00:13:35 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="6511cf8f85719e59ab2277c7" data-wf-site="6511cf8f85719e59ab2277c9" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Webflow and Figma Kickoff Style Guide | Flow Ninja</title>
+  <meta content="Kickoff the transition from Figma to Webflow properly, with Flow Starter kickoff Style Guide available in Figma and Webflow." name="description">
+  <meta content="Webflow and Figma Kickoff Style Guide | Flow Ninja" property="og:title">
+  <meta content="Kickoff the transition from Figma to Webflow properly, with Flow Starter kickoff Style Guide available in Figma and Webflow." property="og:description">
+  <meta content="https://uploads-ssl.webflow.com/6152e1763fd1da30cd1a99e3/642c239cdeb86f2b7debc781_OG%20Image.jpg" property="og:image">
+  <meta content="Webflow and Figma Kickoff Style Guide | Flow Ninja" property="twitter:title">
+  <meta content="Kickoff the transition from Figma to Webflow properly, with Flow Starter kickoff Style Guide available in Figma and Webflow." property="twitter:description">
+  <meta content="https://uploads-ssl.webflow.com/6152e1763fd1da30cd1a99e3/642c239cdeb86f2b7debc781_OG%20Image.jpg" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="ZG6hUmMkwEFiD3s8qpJ5ejzvucU9YVSMbdPHKK6onwI" name="google-site-verification">
+  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="../css/getstarstruck.webflow.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="../images/webclip.png" rel="apple-touch-icon">
+  <link href="https://getstarstruck.com/flow-ninja/kickoff-style-guide" rel="canonical">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TMJVP0E0J6"></script>
+  <script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZGVlNj', true);gtag('config', 'G-TMJVP0E0J6');</script><!--  Disable Scroll Script  -->
+  <script>
+  var Webflow = Webflow || [];
+  Webflow.push(function () {
+    var $body = $(document.body);
+    var scrollPosition = 0;
+    $('[scroll="disable"]').on('click', function () {
+      var oldWidth = $body.innerWidth();
+      scrollPosition = window.pageYOffset;
+      $body.css('overflow', 'hidden');
+      $body.css('position', 'fixed');
+      $body.css('top', `-${scrollPosition}px`);
+      $body.width(oldWidth);
+    });
+    $('[scroll="enable"]').on('click', function () {
+      if ($body.css('overflow') != 'hidden') { scrollPosition = window.pageYOffset; }
+      $body.css('overflow', '');
+      $body.css('position', '');
+      $body.css('top', '');
+      $body.width('');
+      $(window).scrollTop(scrollPosition);
+    });
+    $('[scroll="disable"]').on('focus', function () {
+      var oldWidth = $body.innerWidth();
+      scrollPosition = window.pageYOffset;
+      $body.css('overflow', 'hidden');
+      $body.css('position', 'fixed');
+      $body.css('top', `-${scrollPosition}px`);
+      $body.width(oldWidth);
+    });
+    $('[scroll="enable"]').on('focus', function () {
+      if ($body.css('overflow') != 'hidden') { scrollPosition = window.pageYOffset; }
+      $body.css('overflow', '');
+      $body.css('position', '');
+      $body.css('top', '');
+      $body.width('');
+      $(window).scrollTop(scrollPosition);
+    });
+    $('[scroll="both"]').on('click', function () {
+      if ($body.css('overflow') !== 'hidden') {
+        var oldWidth = $body.innerWidth();
+        scrollPosition = window.pageYOffset;
+        $body.css('overflow', 'hidden');
+        $body.css('position', 'fixed');
+        $body.css('top', `-${scrollPosition}px`);
+        $body.width(oldWidth);
+      } else {
+        $body.css('overflow', '');
+        $body.css('position', '');
+        $body.css('top', '');
+        $body.width('');
+        $(window).scrollTop(scrollPosition);
+      }
+    });
+  });
+</script>
+  <!--  [Attributes by Finsweet] Disable scrolling  -->
+  <script defer="" src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-scrolldisable@1/scrolldisable.js"></script>
+  <!--  Memberstack webflow package  -->
+  <script async="" data-memberstack-app="app_clpbdpmh400db0tu74nk1g0px" src="https://static.memberstack.com/scripts/v1/memberstack.js" type="text/javascript"></script>
+  <style>
+  /* Fixing Font Weight for Browsers */  
+  body{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .list-item-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-height: 1.3em;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-align: start;
+  }
+</style>
+  <style>
+  .top-div{
+    pointer-events: none;
+  }
+  .popular-div{
+    pointer-events: none;
+  }
+  .active-popular-div{
+    pointer-events: auto;
+  }
+  .custom-input-search-wrap {
+    display: flex;
+    width: 100%;
+    max-width: 384px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #5e48db;
+    border-radius: 1.5rem;
+    background-color: hsla(0, 0%, 100%, 1);
+  }
+  .custom-background-try {
+    z-index: 88;
+    display: flex;
+    opacity: 1;
+  }
+  .custom-form-block-search{
+    z-index:99!important;
+  }
+  .custom-popular-div {
+    height: auto;
+  }
+  .absolute-list:empty{
+    border-top: 0px;
+    padding-top: 0px;
+  }
+  #results {
+    list-style: none;
+    padding: 0;
+    overflow: hidden; /* Hide overflow to make transition smooth */
+  }
+  #results div {
+    display: flex;
+    width: 100%;
+    overflow: hidden; /* Hide overflow to make transition smooth */
+    transition: height 0.3s ease; /* Add a height transition */
+  }
+</style>
+</head>
+<body>
+  <div>
+    <div data-w-id="ef971416-f16a-30d1-9855-e6f28d67a8d6" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
+      <div class="nav-container">
+        <nav role="navigation" class="nav-menu w-nav-menu">
+          <div class="div-block-12">
+            <div class="nav-menu-mask">
+              <a href="../index.html" class="nav-brand display-none w-nav-brand">
+                <div class="nav-logo-embed display-none w-embed"><svg width="100%" height="100%" viewbox="0 0 157 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M144.939 20.0754H141.361V4.0166H144.939V10.9678L151.248 4.0166H155.722L149.551 10.486L156.226 20.0754H151.868L147.073 13.0784L144.939 15.3036V20.0754Z" fill="#5E48DB"></path>
+                    <path d="M131.511 20.4892C126.602 20.4892 123.207 17.1856 123.207 12.0009C123.207 7.04566 126.441 3.60449 131.511 3.60449C135.778 3.60449 138.715 6.05919 139.426 10.2345H135.755C135.342 8.14684 133.691 6.79331 131.511 6.79331C128.667 6.79331 126.854 8.83507 126.854 12.0009C126.854 15.2356 128.667 17.3004 131.511 17.3004C133.714 17.3004 135.365 15.9468 135.755 13.8592H139.426C138.669 18.0345 135.732 20.4892 131.511 20.4892Z" fill="#5E48DB"></path>
+                    <path d="M114.425 20.4883C110.318 20.4883 107.45 18.263 107.45 14.7989V4.0166H111.029V14.7072C111.029 16.2672 112.337 17.2536 114.402 17.2536C116.466 17.2536 117.797 16.2672 117.797 14.7072V4.0166H121.376V14.7989C121.376 18.1483 118.669 20.4883 114.425 20.4883Z" fill="#5E48DB"></path>
+                    <path d="M95.4895 20.0754H91.9106V4.0166H100.307C103.381 4.0166 105.515 5.92072 105.515 8.67365C105.515 10.7384 103.978 12.3672 101.661 12.8489C102.922 13.0325 103.863 13.7666 104.322 14.9366L106.249 20.0754H102.441L100.789 15.5101C100.582 14.9136 100.055 14.5925 99.3436 14.5925H95.4895V20.0754ZM95.4895 7.20542V11.4725H99.94C101.317 11.4725 102.005 10.3942 102.005 9.33895C102.005 8.26071 101.317 7.20542 99.94 7.20542H95.4895Z" fill="#5E48DB"></path>
+                    <path d="M84.9408 20.0754H81.362V7.20542H76.2002V4.0166H90.0796V7.20542H84.9408V20.0754Z" fill="#5E48DB"></path>
+                    <path d="M69.2444 20.4892C64.8397 20.4892 61.9721 18.4015 61.7427 15.0292H65.3903C65.6656 16.4745 66.9044 17.3692 69.2215 17.3692C70.9421 17.3692 71.8597 16.7727 71.8597 15.7404C71.8597 14.8227 71.3321 14.4327 69.7262 13.9739L67.2715 13.2627C64.8168 12.5515 62.1786 11.588 62.1786 8.44507C62.1786 5.73802 64.4038 3.60449 68.1891 3.60449C72.2497 3.60449 74.9568 5.92155 75.1174 9.27095H71.4927C71.4238 7.91743 70.3685 6.74743 68.0974 6.74743C66.5833 6.74743 65.7115 7.32096 65.7115 8.2386C65.7115 9.27095 66.6521 9.61507 68.4185 10.1657L70.6897 10.8768C73.1903 11.6568 75.4844 12.5057 75.4844 15.5339C75.4844 18.5621 73.0297 20.4892 69.2444 20.4892Z" fill="#5E48DB"></path>
+                    <path d="M49.5529 20.0754H45.9741V4.0166H54.3706C57.4447 4.0166 59.5782 5.92072 59.5782 8.67365C59.5782 10.7384 58.0412 12.3672 55.7241 12.8489C56.9859 13.0325 57.9265 13.7666 58.3853 14.9366L60.3123 20.0754H56.5041L54.8523 15.5101C54.6459 14.9136 54.1182 14.5925 53.407 14.5925H49.5529V20.0754ZM49.5529 7.20542V11.4725H54.0035C55.38 11.4725 56.0682 10.3942 56.0682 9.33895C56.0682 8.26071 55.38 7.20542 54.0035 7.20542H49.5529Z" fill="#5E48DB"></path>
+                    <path d="M23.2906 20.0754H19.7118V7.20542H14.55V4.0166H28.4294V7.20542H23.2906V20.0754Z" fill="#5E48DB"></path>
+                    <path d="M7.50175 20.4892C3.09705 20.4892 0.229411 18.4015 0 15.0292H3.64764C3.92293 16.4745 5.16175 17.3692 7.47881 17.3692C9.19939 17.3692 10.117 16.7727 10.117 15.7404C10.117 14.8227 9.58939 14.4327 7.98351 13.9739L5.52881 13.2627C3.07411 12.5515 0.435881 11.588 0.435881 8.44507C0.435881 5.73802 2.66117 3.60449 6.44646 3.60449C10.507 3.60449 13.2141 5.92155 13.3747 9.27095H9.74998C9.68116 7.91743 8.62586 6.74743 6.35469 6.74743C4.84058 6.74743 3.96882 7.32096 3.96882 8.2386C3.96882 9.27095 4.9094 9.61507 6.67587 10.1657L8.94704 10.8768C11.4476 11.6568 13.7417 12.5057 13.7417 15.5339C13.7417 18.5621 11.287 20.4892 7.50175 20.4892Z" fill="#5E48DB"></path>
+                    <path d="M44.2735 9.13932C44.703 8.52014 44.2949 7.67648 43.5433 7.62972L38.8804 7.33963C38.6294 7.32402 38.395 7.21205 38.2266 7.02731L35.0032 3.49171C34.5239 2.96595 33.6532 3.12354 33.382 3.7851L31.5746 8.19519C31.4667 8.4585 31.2484 8.66227 30.9775 8.75252L26.6239 10.2028C25.8823 10.4499 25.7148 11.4198 26.3327 11.8891L30.6544 15.1719C30.8839 15.3462 31.0224 15.6139 31.0321 15.9019L31.1954 20.7234C31.2227 21.532 32.1773 21.9439 32.7965 21.4144L35.9336 18.7315C36.3171 18.4034 36.8266 18.2618 37.3228 18.3454L41.5263 19.0528C42.2269 19.1707 42.8187 18.5234 42.6338 17.8414L41.5156 13.7164C41.4413 13.4422 41.4925 13.1483 41.6556 12.9132L44.2735 9.13932Z" fill="#5E48DB"></path>
+                  </svg></div>
+              </a>
+              <div class="nav-link-organizer">
+                <div data-hover="true" data-delay="0" class="dropdown w-dropdown">
+                  <div class="dropdown-toggle w-dropdown-toggle">
+                    <div class="icon-2 w-icon-dropdown-toggle"></div>
+                    <div class="nav-link">Marketplace-Led Growth</div>
+                  </div>
+                  <nav class="dropdown-list w-dropdown-list">
+                    <div class="w-layout-grid grid-2">
+                      <a data-w-id="e0b06d16-bddc-4b32-aed3-79445d1cf0e2" href="../marketplace-led-growth.html" class="link-block w-inline-block">
+                        <div class="text-block dropdown-item">How it works</div>
+                        <div class="text-block dropdown-item-description">Optimize your listings to outrank your competitors in every marketplace</div>
+                      </a>
+                      <a data-w-id="d84d28ae-7459-0180-185a-ab7a51137d70" href="../marketplace-led-growth.html" class="link-block w-inline-block">
+                        <div class="text-block dropdown-item">Lead Gen</div>
+                        <div class="text-block dropdown-item-description">Win more leads, increase conversion rates &amp; lower CAC</div>
+                      </a>
+                      <a data-w-id="64a7ff6a-2358-0598-a01d-e9bf92c3d6b6" href="../marketplace-led-growth.html" class="link-block w-inline-block">
+                        <div class="text-block dropdown-item">Marketplace Optimization</div>
+                        <div class="text-block dropdown-item-description">Get more trusted partners and spend less time onboarding in portals</div>
+                      </a>
+                      <a data-w-id="6f902735-9f37-464c-eb7d-456c799b1f1e" href="../marketplace-led-growth.html" class="link-block w-inline-block">
+                        <div class="text-block dropdown-item">Marketplaces</div>
+                        <div class="text-block dropdown-item-description">More than 350 marketplaces to compare and list on now</div>
+                      </a>
+                    </div>
+                  </nav>
+                </div>
+                <a href="../index.html" class="nav-link w-nav-link">Attention Seekers</a>
+                <a href="../index.html" rel="noopener" class="nav-link w-nav-link">Pricing</a>
+              </div>
+            </div>
+            <div class="nav-buttons-wrapper">
+              <a href="../index.html" class="button-variant w-inline-block">
+                <div class="embed-wrap">
+                  <div class="w-embed"><svg width="24" height="24" viewbox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M49.2988 54.681C47.4461 51.5766 50.369 52.4058 50.8949 52.651C67.3659 58.3029 84.9284 52.4713 100.161 43.0348C91.7927 7.29558 58.8729 -6.39047 33.4592 2.81233C9.09155 11.6364 -7.1538 39.0201 3.30555 67.9037C11.6265 90.8822 41.5533 108.504 71.1714 95.3673C82.2151 89.9767 89.9424 82.4444 93.6468 73.683C68.344 77.0374 53.4942 61.4384 49.2988 54.681ZM43.9984 45.2744C43.7408 45.3677 43.4008 45.636 43.3185 45.811L37.7787 53.0445C37.5675 53.2661 37.3564 53.4878 37.0988 53.5811C36.8411 53.6744 36.5836 53.7676 36.2794 53.7326C35.9753 53.6975 35.6712 53.6624 35.4495 53.4523C35.2277 53.2422 35.0059 53.0321 34.9129 52.7754L31.4119 44.3144C31.319 44.0576 31.0507 43.7192 30.8289 43.5091C30.6071 43.299 30.2565 43.1355 30.0812 43.0538L21.7455 40.5545C20.3073 40.2041 20.0429 38.267 21.3668 37.4971L28.3623 33.0763C28.7022 32.808 28.9133 32.5863 29.078 32.2363C29.2426 31.8862 29.2785 31.5829 29.2678 31.1511L28.7866 22.1774C28.8224 21.874 28.8582 21.5707 29.0229 21.2206C29.1875 20.8706 29.3987 20.6489 29.6563 20.5556C29.9139 20.4623 30.3003 20.3224 30.6045 20.3575C30.9086 20.3926 31.2127 20.4277 31.4344 20.6378L38.8859 25.9257C39.1077 26.1358 39.4583 26.2993 39.8912 26.2877C40.1953 26.3228 40.6282 26.3112 40.8859 26.2179L49.5161 23.0928C49.7737 22.9995 50.2066 22.9879 50.5107 23.023C50.8148 23.0581 51.1654 23.2215 51.3872 23.4316C51.609 23.6417 51.702 23.8985 51.8414 24.2836C51.9344 24.5403 51.945 24.9721 51.7339 25.1938L48.87 33.7815C48.5407 34.4816 48.8196 35.2518 49.3561 35.9288L55.0508 41.9981C56.0309 43.0953 55.3365 44.7988 53.9089 44.8801L45.2041 44.983C44.5136 45.0878 44.256 45.1811 43.9984 45.2744Z" fill="currentColor"></path>
+                    </svg></div>
+                </div>
+                <div>Login</div>
+              </a>
+              <a id="nav-get-started" data-search="start" scroll="disable" href="../index.html" class="green-button w-node-fab2330e-f935-3a16-1dc5-b61884b311bf-8d67a8d6 w-inline-block">
+                <div>Start Now</div>
+                <div class="embed-wrap">
+                  <div class="w-embed"><svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.49829 0.800797C6.44763 0.713466 6.37491 0.640976 6.28743 0.590586C6.19994 0.540195 6.10075 0.513672 5.99979 0.513672C5.89883 0.513672 5.79964 0.540195 5.71216 0.590586C5.62467 0.640976 5.55196 0.713466 5.5013 0.800797L3.93724 3.49669C3.88307 3.58993 3.80865 3.66982 3.71948 3.73047C3.63031 3.79111 3.52866 3.83096 3.42204 3.84708L0.490438 4.28967C-0.00171616 4.36459 -0.174604 4.98583 0.209207 5.30395L2.39278 7.11235C2.59448 7.28005 2.68957 7.54457 2.64058 7.80217L2.06948 10.8018C2.0492 10.9083 2.05938 11.0184 2.09887 11.1194C2.13836 11.2204 2.20554 11.3082 2.2927 11.3727C2.37986 11.4373 2.48345 11.4759 2.59158 11.4842C2.69971 11.4924 2.80798 11.4701 2.90395 11.4196L5.66439 9.96615C5.76782 9.91174 5.88293 9.88331 5.99979 9.88331C6.11666 9.88331 6.23177 9.91174 6.3352 9.96615L9.09564 11.4196C9.19161 11.4701 9.29988 11.4924 9.40801 11.4842C9.51613 11.4759 9.61973 11.4373 9.70689 11.3727C9.79405 11.3082 9.86123 11.2204 9.90072 11.1194C9.9402 11.0184 9.95039 10.9083 9.93011 10.8018L9.359 7.80217C9.3348 7.67554 9.34502 7.54472 9.38861 7.42339C9.4322 7.30205 9.50755 7.19463 9.60681 7.11235L11.791 5.30337C12.1742 4.98641 12.0013 4.36401 11.5086 4.28967L8.57813 3.84708C8.4714 3.83104 8.36964 3.79123 8.28036 3.73058C8.19108 3.66994 8.11658 3.59 8.06234 3.49669L6.49829 0.800797Z" fill="currentColor"></path>
+                    </svg></div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="nav-sepparator"></div>
+        </nav>
+        <div class="nav-menu-button-overall">
+          <a href="../index.html" class="nav-brand w-nav-brand">
+            <div class="nav-logo-embed w-embed"><svg width="100%" height="100%" viewbox="0 0 157 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M144.939 20.0754H141.361V4.0166H144.939V10.9678L151.248 4.0166H155.722L149.551 10.486L156.226 20.0754H151.868L147.073 13.0784L144.939 15.3036V20.0754Z" fill="#5E48DB"></path>
+                <path d="M131.511 20.4892C126.602 20.4892 123.207 17.1856 123.207 12.0009C123.207 7.04566 126.441 3.60449 131.511 3.60449C135.778 3.60449 138.715 6.05919 139.426 10.2345H135.755C135.342 8.14684 133.691 6.79331 131.511 6.79331C128.667 6.79331 126.854 8.83507 126.854 12.0009C126.854 15.2356 128.667 17.3004 131.511 17.3004C133.714 17.3004 135.365 15.9468 135.755 13.8592H139.426C138.669 18.0345 135.732 20.4892 131.511 20.4892Z" fill="#5E48DB"></path>
+                <path d="M114.425 20.4883C110.318 20.4883 107.45 18.263 107.45 14.7989V4.0166H111.029V14.7072C111.029 16.2672 112.337 17.2536 114.402 17.2536C116.466 17.2536 117.797 16.2672 117.797 14.7072V4.0166H121.376V14.7989C121.376 18.1483 118.669 20.4883 114.425 20.4883Z" fill="#5E48DB"></path>
+                <path d="M95.4895 20.0754H91.9106V4.0166H100.307C103.381 4.0166 105.515 5.92072 105.515 8.67365C105.515 10.7384 103.978 12.3672 101.661 12.8489C102.922 13.0325 103.863 13.7666 104.322 14.9366L106.249 20.0754H102.441L100.789 15.5101C100.582 14.9136 100.055 14.5925 99.3436 14.5925H95.4895V20.0754ZM95.4895 7.20542V11.4725H99.94C101.317 11.4725 102.005 10.3942 102.005 9.33895C102.005 8.26071 101.317 7.20542 99.94 7.20542H95.4895Z" fill="#5E48DB"></path>
+                <path d="M84.9408 20.0754H81.362V7.20542H76.2002V4.0166H90.0796V7.20542H84.9408V20.0754Z" fill="#5E48DB"></path>
+                <path d="M69.2444 20.4892C64.8397 20.4892 61.9721 18.4015 61.7427 15.0292H65.3903C65.6656 16.4745 66.9044 17.3692 69.2215 17.3692C70.9421 17.3692 71.8597 16.7727 71.8597 15.7404C71.8597 14.8227 71.3321 14.4327 69.7262 13.9739L67.2715 13.2627C64.8168 12.5515 62.1786 11.588 62.1786 8.44507C62.1786 5.73802 64.4038 3.60449 68.1891 3.60449C72.2497 3.60449 74.9568 5.92155 75.1174 9.27095H71.4927C71.4238 7.91743 70.3685 6.74743 68.0974 6.74743C66.5833 6.74743 65.7115 7.32096 65.7115 8.2386C65.7115 9.27095 66.6521 9.61507 68.4185 10.1657L70.6897 10.8768C73.1903 11.6568 75.4844 12.5057 75.4844 15.5339C75.4844 18.5621 73.0297 20.4892 69.2444 20.4892Z" fill="#5E48DB"></path>
+                <path d="M49.5529 20.0754H45.9741V4.0166H54.3706C57.4447 4.0166 59.5782 5.92072 59.5782 8.67365C59.5782 10.7384 58.0412 12.3672 55.7241 12.8489C56.9859 13.0325 57.9265 13.7666 58.3853 14.9366L60.3123 20.0754H56.5041L54.8523 15.5101C54.6459 14.9136 54.1182 14.5925 53.407 14.5925H49.5529V20.0754ZM49.5529 7.20542V11.4725H54.0035C55.38 11.4725 56.0682 10.3942 56.0682 9.33895C56.0682 8.26071 55.38 7.20542 54.0035 7.20542H49.5529Z" fill="#5E48DB"></path>
+                <path d="M23.2906 20.0754H19.7118V7.20542H14.55V4.0166H28.4294V7.20542H23.2906V20.0754Z" fill="#5E48DB"></path>
+                <path d="M7.50175 20.4892C3.09705 20.4892 0.229411 18.4015 0 15.0292H3.64764C3.92293 16.4745 5.16175 17.3692 7.47881 17.3692C9.19939 17.3692 10.117 16.7727 10.117 15.7404C10.117 14.8227 9.58939 14.4327 7.98351 13.9739L5.52881 13.2627C3.07411 12.5515 0.435881 11.588 0.435881 8.44507C0.435881 5.73802 2.66117 3.60449 6.44646 3.60449C10.507 3.60449 13.2141 5.92155 13.3747 9.27095H9.74998C9.68116 7.91743 8.62586 6.74743 6.35469 6.74743C4.84058 6.74743 3.96882 7.32096 3.96882 8.2386C3.96882 9.27095 4.9094 9.61507 6.67587 10.1657L8.94704 10.8768C11.4476 11.6568 13.7417 12.5057 13.7417 15.5339C13.7417 18.5621 11.287 20.4892 7.50175 20.4892Z" fill="#5E48DB"></path>
+                <path d="M44.2735 9.13932C44.703 8.52014 44.2949 7.67648 43.5433 7.62972L38.8804 7.33963C38.6294 7.32402 38.395 7.21205 38.2266 7.02731L35.0032 3.49171C34.5239 2.96595 33.6532 3.12354 33.382 3.7851L31.5746 8.19519C31.4667 8.4585 31.2484 8.66227 30.9775 8.75252L26.6239 10.2028C25.8823 10.4499 25.7148 11.4198 26.3327 11.8891L30.6544 15.1719C30.8839 15.3462 31.0224 15.6139 31.0321 15.9019L31.1954 20.7234C31.2227 21.532 32.1773 21.9439 32.7965 21.4144L35.9336 18.7315C36.3171 18.4034 36.8266 18.2618 37.3228 18.3454L41.5263 19.0528C42.2269 19.1707 42.8187 18.5234 42.6338 17.8414L41.5156 13.7164C41.4413 13.4422 41.4925 13.1483 41.6556 12.9132L44.2735 9.13932Z" fill="#5E48DB"></path>
+              </svg></div>
+          </a>
+          <div class="be-seen-search-icons"></div>
+          <div id="mobile-clicker-in" scroll="enable" class="search-icon-mobile">
+            <div id="mobile-clicker-out" class="loop-icon"><img src="../images/search-normal_1.svg" loading="lazy" alt="" class="cover-image"></div>
+            <div class="x-icon"><img src="../images/button-X.svg" loading="lazy" alt="" class="cover-image"></div>
+          </div>
+          <aside class="nav-menu-button w-nav-button">
+            <div class="nav-menu-button-wrap">
+              <div class="nav-lines nav-line-1"></div>
+              <div class="nav-lines nav-line-2"></div>
+              <div class="nav-lines nav-line-3"></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <main class="main-wrapper">
+      <section class="section padding-s">
+        <div class="container grid">
+          <div id="w-node-ab9fc542-2f8d-68b9-584f-7e0c87f81bb9-ab2277c7" class="style-guide-intro">
+            <div class="flow-ninja-logo w-embed"><svg width="159" height="22" viewbox="0 0 159 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M84.3237 13.6675V17.0962H80.6074V13.6675H84.3237Z" fill="white"></path>
+                <path d="M3.748 17.0962V8.43775H0L0.0235058 5.96004H3.748V5.22052C3.73292 4.35267 4.00876 3.50172 4.5378 2.78401C5.06433 2.07123 5.81103 1.51677 6.7779 1.12063C7.81566 0.70826 8.93661 0.504228 10.0664 0.522073C11.0568 0.51127 12.043 0.643346 12.9893 0.91352C13.7943 1.13692 14.5408 1.51083 15.1824 2.01196C15.763 2.484 16.1156 3.01678 16.2402 3.61027L12.6085 4.50268C12.4633 4.07639 12.1605 3.71066 11.7529 3.46931C11.3018 3.19618 10.7715 3.05589 10.2321 3.06702C9.47911 3.06702 8.90165 3.29184 8.4997 3.74148C8.09775 4.19112 7.89717 4.77811 7.89795 5.50244V5.96004H15.4198V8.43775H7.89795V17.0951L3.748 17.0962Z" fill="white"></path>
+                <path d="M18.3872 17.0962V0.955811H22.5125V17.0962H18.3872Z" fill="white"></path>
+                <path d="M111.218 0.530762V4.08089H107.039V0.530762H111.218Z" fill="white"></path>
+                <path d="M138.813 0.530762V4.08089H134.634V0.530762H138.813Z" fill="white"></path>
+                <path d="M86.9263 17.0971V5.9609H91.0762V8.85392C91.3512 8.18296 91.7909 7.57986 92.3608 7.09187C92.9562 6.58874 93.6531 6.19856 94.4117 5.94355C95.2616 5.65909 96.1603 5.51911 97.0643 5.53042C98.4629 5.53042 99.6887 5.80946 100.742 6.36753C101.785 6.91688 102.635 7.73094 103.191 8.71296C103.772 9.71995 104.062 10.869 104.063 12.1601V17.0971H99.9379V12.2685C99.9529 11.5017 99.7589 10.7437 99.3738 10.064C99.0177 9.43951 98.479 8.91959 97.8188 8.56332C97.122 8.19995 96.3321 8.01607 95.5317 8.03091C94.7319 8.01958 93.9429 8.20323 93.2446 8.56332C92.5702 8.91727 92.0153 9.43674 91.6415 10.064C91.2393 10.7475 91.0368 11.5159 91.0539 12.2934V17.1003L86.9263 17.0971Z" fill="white"></path>
+                <path d="M111.188 5.96094H107.039V17.0971H111.188V5.96094Z" fill="white"></path>
+                <path d="M138.798 5.96094H134.649V21.4789H138.798V5.96094Z" fill="white"></path>
+                <path d="M114.631 17.0971V5.96089H118.78V8.85391C119.056 8.18289 119.496 7.57981 120.066 7.09186C120.66 6.58886 121.356 6.19868 122.113 5.94354C122.963 5.65918 123.861 5.51921 124.765 5.53041C126.163 5.53041 127.389 5.80944 128.443 6.36752C129.488 6.91805 130.338 7.73362 130.895 8.71728C131.476 9.72427 131.766 10.8733 131.767 12.1644V17.1014H127.642V12.2685C127.657 11.5018 127.464 10.7438 127.079 10.064C126.723 9.43787 126.183 8.9167 125.522 8.56005C124.825 8.19653 124.036 8.01262 123.236 8.02764C122.436 8.01621 121.647 8.19987 120.949 8.56005C120.274 8.91505 119.72 9.43567 119.347 10.064C118.944 10.7474 118.741 11.5158 118.759 12.2934V17.1003L114.631 17.0971Z" fill="white"></path>
+                <path d="M151.86 16.7492C150.571 17.2718 149.102 17.5332 147.452 17.5332C146.345 17.5481 145.243 17.4017 144.187 17.0994C143.219 16.8103 142.468 16.4188 141.935 15.9251C141.401 15.4313 141.134 14.8892 141.133 14.2986C141.133 13.648 141.424 13.0462 142.005 12.4931C142.587 11.9401 143.399 11.4847 144.442 11.1269C145.594 10.7503 146.795 10.5126 148.013 10.4199L153.978 9.98615C154.199 9.96264 154.409 9.88804 154.59 9.76928C154.669 9.72245 154.734 9.65832 154.78 9.58262C154.825 9.50692 154.849 9.42202 154.85 9.33554C154.85 9.10494 154.666 8.8841 154.297 8.67301C153.926 8.46265 153.424 8.30325 152.787 8.19373C152.099 8.08116 151.401 8.02672 150.701 8.03108C149.709 8.03271 148.718 8.11617 147.742 8.28048C146.801 8.43293 145.878 8.66599 144.985 8.97663C144.143 9.27518 143.477 9.59795 142.987 9.94494L141.431 7.92265C142.057 7.47229 142.875 7.06241 143.882 6.69301C144.946 6.3079 146.048 6.02025 147.173 5.83421C148.336 5.63329 149.516 5.53129 150.699 5.52951C152.103 5.51608 153.501 5.69551 154.848 6.06192C156.101 6.41758 157.1 6.92361 157.842 7.58C158.585 8.23638 158.954 9.0012 158.95 9.87446V17.0951H154.801V14.6618C154.129 15.5315 153.149 16.2272 151.86 16.7492ZM145.706 14.4547C145.99 14.6369 146.394 14.7735 146.92 14.8678C147.516 14.9679 148.12 15.0155 148.724 15.0099C149.717 15.0194 150.707 14.8986 151.663 14.651C152.55 14.411 153.27 14.0882 153.821 13.6827C154.371 13.2771 154.701 12.8275 154.81 12.3337V11.9L148.846 12.3337C148.221 12.3814 147.602 12.4797 146.996 12.6276C146.541 12.7275 146.112 12.9088 145.733 13.1611C145.435 13.378 145.286 13.6035 145.286 13.8356C145.286 14.0676 145.424 14.2736 145.706 14.4547Z" fill="white"></path>
+                <path d="M48.7181 9.41916C49.3131 9.43163 49.8791 9.65845 50.2951 10.0511C50.7112 10.4437 50.9441 10.971 50.9441 11.5201C50.9441 12.0691 50.7112 12.5964 50.2951 12.989C49.8791 13.3817 49.3131 13.6085 48.7181 13.621H30.715C30.12 13.6085 29.554 13.3817 29.138 12.989C28.722 12.5964 28.489 12.0691 28.489 11.5201C28.489 10.971 28.722 10.4437 29.138 10.0511C29.554 9.65845 30.12 9.43163 30.715 9.41916H48.7181ZM48.7181 5.94927H30.715C29.1156 5.95498 27.5835 6.54387 26.4527 7.58752C25.322 8.63117 24.6843 10.045 24.6787 11.5206C24.6834 12.9978 25.3214 14.4132 26.4536 15.4577C27.5857 16.5022 29.1198 17.0909 30.7209 17.0952H48.7181C50.319 17.0906 51.8528 16.5018 52.9847 15.4573C54.1165 14.4128 54.7545 12.9976 54.7591 11.5206C54.7554 10.0432 54.1178 8.62719 52.9858 7.58218C51.8538 6.53717 50.3195 5.94814 48.7181 5.94385V5.94927Z" fill="white"></path>
+                <path d="M59.9911 17.0963L56.9106 5.94385H61.0242L63.3747 15.4015L65.6807 5.94385H71.4184L73.769 15.5099L76.0973 5.94385H80.1649L77.202 17.0963H70.7379L68.573 7.67879L66.3858 17.0941L59.9911 17.0963Z" fill="white"></path>
+              </svg></div>
+            <h1 class="heading-xs text-neutral">Styleguide</h1>
+          </div>
+        </div>
+      </section>
+      <section class="section padding-l">
+        <div class="container grid">
+          <h2 id="Project-Set-Up" data-scroll="mid" class="w-node-_1dbed699-b8f8-5e1e-f904-09957ee85dd6-ab2277c7">Typography</h2>
+          <p id="w-node-_30a7ccbf-f142-c729-e26e-3622d1296b13-ab2277c7">*Note: Figma set up has Desktop, Tablet and Mobile side by side.<br>On Webflow we need to adjust Fonts on specific brakepoints.</p>
+          <div id="w-node-b14a0122-3961-2249-be77-2f0e224657ad-ab2277c7" class="kickoff-line"></div>
+        </div>
+        <div class="container grid margin-xl">
+          <div id="w-node-_43c0beed-6386-7877-56a2-ee7835884e37-ab2277c7" class="column">
+            <h3 class="no-margin">Upload &amp; Apply Fonts</h3>
+          </div>
+          <div id="w-node-d72d6950-d93d-4637-35d5-37c05e7c0d38-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">Body (All Pages)</div>
+          </div>
+          <div id="w-node-_73874b90-ab75-7e50-29c3-3908917f44ec-ab2277c7" class="column">
+            <h2 class="jumbo-h no-margin">Trap</h2>
+          </div>
+        </div>
+        <div class="container grid">
+          <div id="w-node-_1c78e62c-1aca-69f2-474b-936dc374d006-ab2277c7" class="column margin-bot-l">
+            <h3 class="no-margin">Global Styles</h3>
+          </div>
+          <div id="w-node-ef07ea39-cfb9-5449-7b94-05b347257299-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">Jumbo</div>
+          </div>
+          <div id="w-node-ef07ea39-cfb9-5449-7b94-05b34725729e-ab2277c7" class="column">
+            <h1 class="jumbo-h">Jumbo H</h1>
+          </div>
+          <div id="w-node-e0c0f0f9-86e5-b291-16fa-67027c7d91ac-ab2277c7" class="column">
+            <h1 class="jumbo-h">Jumbo H</h1>
+          </div>
+          <div id="w-node-_0231eb0a-3d9f-3574-6b60-a387f73bb22d-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">All H1 Headings</div>
+          </div>
+          <div id="w-node-_38c376bb-e920-9eda-e812-210d78457c7d-ab2277c7" class="column">
+            <h1>Heading 1</h1>
+          </div>
+          <div id="w-node-_8c60c5a5-f71b-34a4-f8b3-c84fb08a531e-ab2277c7" class="column">
+            <div class="heading-xxl">Heading XXL</div>
+          </div>
+          <div id="w-node-_2a3facfc-4fe8-4dd9-3321-d5351248ddcf-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">All H2 Headings</div>
+          </div>
+          <div id="w-node-_16208a4a-7610-d558-cad8-21613c02ff3c-ab2277c7" class="column">
+            <h2>Heading 2</h2>
+          </div>
+          <div id="w-node-_035ff3d5-375d-5878-a683-f306d512ef1c-ab2277c7" class="column">
+            <div class="heading-xl">Heading XL</div>
+          </div>
+          <div id="w-node-_18b58d78-c5ef-76cf-c938-e6865c3a0957-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">All H3 Headings</div>
+          </div>
+          <div id="w-node-c4bd1cd3-8332-0e51-10e1-21867c45c99b-ab2277c7" class="column">
+            <h3>Heading 3</h3>
+          </div>
+          <div id="w-node-_9106cb4b-3191-1113-9a39-28b1e23c6c51-ab2277c7" class="column">
+            <div class="heading-l">Heading L</div>
+          </div>
+          <div id="w-node-dd45c394-e668-3321-1198-f52069133a57-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">All H4 Headings</div>
+          </div>
+          <div id="w-node-_6c16b473-943e-1b4c-dbda-780c4c057a36-ab2277c7" class="column">
+            <h4>Heading 4</h4>
+          </div>
+          <div id="w-node-_53ec84b3-60f1-9f16-1b2f-44f2c3696f1e-ab2277c7" class="column">
+            <div class="heading-xs">Heading XS</div>
+          </div>
+          <div id="w-node-a2f542df-f4a7-f916-a2bf-d690aba6410a-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">All H5 Headings</div>
+          </div>
+          <div id="w-node-_8d37f161-a4ff-4c02-09cc-d7338e140dd3-ab2277c7" class="column">
+            <h5>Heading 5</h5>
+          </div>
+          <div id="w-node-a0ed19ac-34b4-91c5-7b83-68335faae140-ab2277c7" class="column">
+            <div class="heading-xxs">Heading XXS</div>
+          </div>
+          <div id="w-node-e92dc493-afce-b66a-bb38-0fdfa5de0a0a-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">All H6 Headings</div>
+          </div>
+          <div id="w-node-_20670753-4d0a-155f-6c6d-e28a3d1db02c-ab2277c7" class="column">
+            <h6>Heading 6</h6>
+          </div>
+          <div id="w-node-_496fa53a-5d34-28de-2d08-c3c0930cbca2-ab2277c7" class="column">
+            <div class="heading-3xs">Heading 3XS</div>
+          </div>
+          <div id="w-node-_7a23a602-d1b7-d52f-263a-cf3e3606d3b3-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">All Paragraphs</div>
+          </div>
+          <div id="w-node-a7a6a72c-9e0a-0737-6f04-f14d357bf427-ab2277c7" class="column">
+            <p class="paragraph">We try your eye, but can you change everything? in an ideal world nor can we try some other colours maybe just do what you think.</p>
+          </div>
+          <div id="w-node-_39fab930-d5c6-d557-12ce-a3419715ff49-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">Text XL</div>
+          </div>
+          <div id="w-node-_0e3734e8-37b3-160f-39d8-005208ef20ea-ab2277c7" class="column">
+            <p class="text-xl">We try your eye, but can you change everything? in an ideal world nor can we try some other colours maybe just do what you think.</p>
+          </div>
+          <div id="w-node-_6c9a523d-70fb-7c7c-4bee-7acb6d872709-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">Text XS</div>
+          </div>
+          <div id="w-node-d28ea3ce-1ff6-1e07-c8e3-de7b699871ce-ab2277c7" class="column">
+            <p class="text-xs">We try your eye, but can you change everything? in an ideal world nor can we try some other colours maybe just do what you think.</p>
+          </div>
+          <div id="w-node-d76e0423-00bb-fc33-ce55-a4e359b90c01-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">All Quotes</div>
+          </div>
+          <div id="w-node-e177acb4-7c91-448d-d549-50d77e5c9e16-ab2277c7" class="column">
+            <blockquote>Block Quote</blockquote>
+          </div>
+          <div id="w-node-_24b087a3-66a0-474e-9bb2-8506dc3e8caa-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">Label XS</div>
+          </div>
+          <div id="w-node-a1536eb8-aacf-887c-844b-59e0e946dfb1-ab2277c7" class="column">
+            <div class="label-xs">This is some text inside of a div block.</div>
+          </div>
+          <div id="w-node-_49c61263-a3e5-0fa5-5794-d850c0b00026-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">Label</div>
+          </div>
+          <div id="w-node-bae514f5-9b6f-a4c3-d3ca-68d8ac2e547c-ab2277c7" class="column">
+            <div class="label">This is some text inside of a div block.</div>
+          </div>
+          <div id="w-node-_897f6159-8fa3-bfc8-02d4-9f5d0452fcf8-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">Label XL</div>
+          </div>
+          <div id="w-node-_9dc76a5e-c596-e4b0-3fb4-7b15303acc1b-ab2277c7" class="column">
+            <div class="label-xl">This is some text inside of a div block.</div>
+          </div>
+          <div id="w-node-e2446457-6a23-c0d1-070c-f0f3b7586106-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">All Links</div>
+          </div>
+          <div id="w-node-_214bbd82-eb09-3e6b-dc9e-802f78dffeb1-ab2277c7" class="column">
+            <a href="#">Text Link</a>
+          </div>
+          <div id="w-node-f5550334-3d38-900d-34b5-b7cd860b5ba6-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">All Unordered Lists</div>
+          </div>
+          <div id="w-node-be415236-5406-14ad-4edf-c6236719d74e-ab2277c7" class="column">
+            <ul role="list">
+              <li>This is a dog</li>
+              <li>This is a dog</li>
+              <li>This is a dog</li>
+            </ul>
+          </div>
+          <div id="w-node-_470204c1-cde7-6989-bcd0-20d473edc5bd-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">All Ordered Lists</div>
+          </div>
+          <div id="w-node-_3c0e7e4f-af59-2b37-0cfc-668b8e7bc791-ab2277c7" class="column">
+            <ol role="list">
+              <li>This is a dog</li>
+              <li>This is a dog</li>
+              <li>This is a dog</li>
+            </ol>
+          </div>
+          <div id="w-node-daa40b7a-c21d-63e6-cd46-295bc549f1a7-ab2277c7" class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">Body Rich Text</div>
+          </div>
+          <div id="w-node-_5404eb7c-0e01-8e9c-0e49-0f9d7fd91b09-ab2277c7" class="column">
+            <div class="body-rich-text w-richtext">
+              <h1>Heading 1 </h1>
+              <h2>Heading 2 </h2>
+              <h3>Heading 3 </h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+              <h1>What’s a Rich Text element?</h1>
+              <p>The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.</p>
+              <h3>Static and dynamic content editing</h3>
+              <p>A rich text element can be used with static or <a href="http://flow.ninja">dynamic content</a>. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila!</p>
+              <h4>How to customize formatting for each rich text</h4>
+              <p>Headings, paragraphs, blockquotes, figures, images, and figure captions can all be styled after a class is added to the rich text element using the &quot;When inside of&quot; nested selector system.</p>
+              <figure style="max-width:1440pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                <div><img src="../images/About-Item-2-1.jpg" loading="lazy" alt=""></div>
+                <figcaption>Fig Caption Example</figcaption>
+              </figure>
+              <blockquote>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..”</blockquote>
+              <ul role="list">
+                <li>Item 1 </li>
+                <li>Item 2 </li>
+                <li>Item 3 </li>
+              </ul>
+              <ol start="" role="list">
+                <li>Item 1 </li>
+                <li>Item 2 </li>
+                <li>Item 3 </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="Utility-Classes" class="section padding-l">
+        <div class="container">
+          <h3 class="margin-l">Global Background Classes</h3>
+          <h4 class="margin-s">Primary</h4>
+          <div class="kickoff-styles-wrap">
+            <div id="w-node-adc6fca3-12d5-6840-185b-67de2c2bf0cb-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-purple">
+                  <div class="kickoff-color-helper">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Purple</div>
+              </div>
+            </div>
+            <div id="w-node-e3fb3f13-88c0-9012-a386-a1b9aaee0541-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-light-purple">
+                  <div class="kickoff-color-helper">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Light Purple</div>
+              </div>
+            </div>
+            <div id="w-node-_28bd63f0-6680-e90a-cef5-eccbcf452fc4-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-neon">
+                  <div class="kickoff-color-helper">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Neon</div>
+              </div>
+            </div>
+            <div id="w-node-a0eb83da-e09f-6ea8-c50c-f00dba1427a1-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="text-highlight-neon">
+                  <div class="kickoff-color-helper">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Text Highlight Neon</div>
+              </div>
+            </div>
+          </div>
+          <h4 class="margin-s">Secondary / Purple</h4>
+          <div class="kickoff-styles-wrap">
+            <div id="w-node-_0733b70e-37c0-b84a-08fe-d6e5a45283ff-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-purple-50">
+                  <div class="kickoff-color-helper text-navy-300">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Purple 50<br></div>
+              </div>
+            </div>
+            <div id="w-node-ed63493a-5848-e215-9b9d-8c4e3baab0d4-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-purple-100">
+                  <div class="kickoff-color-helper text-navy-300">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Purple 100<br></div>
+              </div>
+            </div>
+            <div id="w-node-c8333d7b-846c-6c83-4ed8-efd1299f7711-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-purple-200">
+                  <div class="kickoff-color-helper text-navy-300">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Purple 200<br></div>
+              </div>
+            </div>
+            <div id="w-node-d6cee0a1-b3fe-8e95-673e-0e3667db6e92-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-purple-300">
+                  <div class="kickoff-color-helper text-navy-300">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Purple 300<br></div>
+              </div>
+            </div>
+            <div id="w-node-_97355783-b81a-2f56-cf93-a432f6903430-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="neon-button-text">
+                  <div class="kickoff-color-helper text-navy-300">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Neon Button Text<br></div>
+              </div>
+            </div>
+          </div>
+          <h4 class="margin-s">Secondary / Neon</h4>
+          <div class="kickoff-styles-wrap">
+            <div id="w-node-_9ee3691c-6630-b809-7e20-77e7cb280d34-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-neon-50">
+                  <div class="kickoff-color-helper text-navy-300">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Neon 50<br></div>
+              </div>
+            </div>
+            <div id="w-node-_9ee3691c-6630-b809-7e20-77e7cb280d3e-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-neon-100">
+                  <div class="kickoff-color-helper text-navy-300">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Neon 100<br></div>
+              </div>
+            </div>
+            <div id="w-node-_9ee3691c-6630-b809-7e20-77e7cb280d48-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-neon-200">
+                  <div class="kickoff-color-helper text-navy-300">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Neon 200<br></div>
+              </div>
+            </div>
+            <div id="w-node-_9ee3691c-6630-b809-7e20-77e7cb280d52-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-neon-300">
+                  <div class="kickoff-color-helper text-navy-300">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Neon 300<br></div>
+              </div>
+            </div>
+          </div>
+          <h4 class="margin-s">Neutrals</h4>
+          <div class="kickoff-styles-wrap">
+            <div id="w-node-_6c41f44b-b701-4842-381d-04daef273904-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-neutral">
+                  <div class="kickoff-color-helper text-navy-300">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Neutral</div>
+              </div>
+            </div>
+            <div id="w-node-f6a3e425-776f-57d7-1506-b61a84919725-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-neutral-100">
+                  <div class="kickoff-color-helper text-navy-300">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Neutral 100</div>
+              </div>
+            </div>
+            <div id="w-node-c30759ab-c69a-8ffc-d89b-71ee25d44b6b-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-neutral-200">
+                  <div class="kickoff-color-helper text-navy-300">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Neutral 200</div>
+              </div>
+            </div>
+            <div id="w-node-_370a7f08-7cbf-0169-f682-18752d2c9b60-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-neutral-300">
+                  <div class="kickoff-color-helper text-navy-300">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Neutral 300</div>
+              </div>
+            </div>
+            <div id="w-node-_1c61385d-7922-3d7c-c7bb-7e780ddc2d40-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-neutral-400">
+                  <div class="kickoff-color-helper text-navy-300">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Neutral 400</div>
+              </div>
+            </div>
+            <div id="w-node-_5f840a1d-3776-67dc-2024-a54c83aefb2b-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-neutral-500">
+                  <div class="kickoff-color-helper">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Neutral 500</div>
+              </div>
+            </div>
+            <div id="w-node-bc064cb3-8640-6fbc-9700-004cc0fc1a16-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-neutral-600">
+                  <div class="kickoff-color-helper">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Neutral 600</div>
+              </div>
+            </div>
+          </div>
+          <h4 class="margin-s">States Colors</h4>
+          <div class="kickoff-styles-wrap no-margin">
+            <div id="w-node-_9c034f22-1a1b-08ea-dde1-2cd419d2b722-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-error">
+                  <div class="kickoff-color-helper">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Error State</div>
+              </div>
+            </div>
+            <div id="w-node-_3f6ba279-894d-b6e5-7f91-ffdfdb4b7ece-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-success">
+                  <div class="kickoff-color-helper">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Success State</div>
+              </div>
+            </div>
+            <div id="w-node-bb8afbb3-4fb5-526e-ae98-1953a46eeb28-ab2277c7" class="column">
+              <div class="kickoff-color-cards">
+                <div class="bg-neutral-600">
+                  <div class="kickoff-color-helper">Change the parent class color</div>
+                </div>
+              </div>
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">BG Neutral 600</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section padding-l">
+        <div class="container">
+          <h3 class="margin-l">Text Colors</h3>
+          <h4 class="margin-s">Global Text Colors</h4>
+          <div class="kickoff-styles-wrap">
+            <div class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Body</div>
+              </div>
+              <h4>Back-end of third quarter pushback.</h4>
+            </div>
+            <div class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">All Paragraphs</div>
+              </div>
+              <p>We try your eye, but can you change everything? in an ideal world nor can we try some other colours maybe just do what you think.</p>
+            </div>
+            <div class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">All Links</div>
+              </div>
+              <a href="#">Text Link</a>
+            </div>
+          </div>
+          <h4 class="margin-s">Neutral Text Colors</h4>
+          <div class="kickoff-styles-wrap">
+            <div class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Text Neutral</div>
+              </div>
+              <h4 class="text-neutral">Back-end of third quarter pushback.</h4>
+            </div>
+            <div class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Text Neutral 200</div>
+              </div>
+              <h4 class="text-neutral-200">Back-end of third quarter pushback.</h4>
+            </div>
+            <div class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Text Neutral 400</div>
+              </div>
+              <h4 class="text-neutral-400">Back-end of third quarter pushback.</h4>
+            </div>
+            <div class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Text Neutral 600</div>
+              </div>
+              <h4 class="text-neutral-600">Back-end of third quarter pushback.</h4>
+            </div>
+          </div>
+          <h4 class="margin-s">Brand Text Colors</h4>
+          <div class="kickoff-styles-wrap no-margin">
+            <div class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Text Navy 100</div>
+              </div>
+              <h4 class="text-navy-100">Back-end of third quarter pushback.</h4>
+            </div>
+            <div class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Text Navy 200</div>
+              </div>
+              <h4 class="text-navy-200">Back-end of third quarter pushback.</h4>
+            </div>
+            <div class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Text Navy 300</div>
+              </div>
+              <h4 class="text-navy-300">Back-end of third quarter pushback.</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="Buttons" class="section padding-l">
+        <div class="container">
+          <h3 class="margin-l">Buttons</h3>
+          <div class="kickoff-styles-wrap">
+            <div id="w-node-_1a3fe882-bd4a-dfcc-a0bf-3f5f25d7397a-ab2277c7" class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Button</div>
+              </div>
+              <a href="#" class="button w-button">Touch me</a>
+            </div>
+            <div id="w-node-_0f6647f2-3a81-6928-afb4-0205c39bf8a2-ab2277c7" class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Button Small</div>
+              </div>
+              <a href="#" class="button-small w-button">Touch me</a>
+            </div>
+            <div id="w-node-_7f5485f3-df8e-9e35-88d4-46ae6d2f2bab-ab2277c7" class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Button Variant</div>
+              </div>
+              <a href="#" class="button-variant w-button">Touch me</a>
+            </div>
+            <div id="w-node-_158150a2-2805-7beb-56ba-f87361a4787a-ab2277c7" class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Button Variant Small</div>
+              </div>
+              <a href="#" class="button-variant-small w-button">Touch me</a>
+            </div>
+            <div id="w-node-_73fc2a2c-09bf-7345-70d1-5ead0f1eb6ff-ab2277c7" class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Slider Button Left</div>
+              </div>
+              <a href="#" class="slider-button-left w-button">Slider Button Left</a>
+            </div>
+            <div id="w-node-_945633db-5ded-cc98-5fda-facb2c96fb6d-ab2277c7" class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Slider Button Right</div>
+              </div>
+              <a href="#" class="slider-button-right w-button">Slider Button Right</a>
+            </div>
+            <div id="w-node-f6f64556-b4e6-a5eb-d633-15e3c7bae629-ab2277c7" class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Button Link</div>
+              </div>
+              <a href="#" class="button-link">Text Link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section padding-l">
+        <div class="container">
+          <h3>Inputs</h3>
+          <p class="margin-l">Note, please copy the code from Page Settings only on the pages that will include forms in order to have all custom forms working properly.</p>
+          <div class="w-form">
+            <form id="wf-form-Kickoff-Form" name="wf-form-Kickoff-Form" data-name="Kickoff Form" method="get" data-wf-page-id="6511cf8f85719e59ab2277c7" data-wf-element-id="4d7decaf-555c-c2b6-227f-f3323d412dee">
+              <div class="kickoff-styles-wrap no-margin">
+                <div id="w-node-bd761f10-afd1-4ab4-d27c-60086671e924-ab2277c7" class="column">
+                  <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                    <div class="kickoff-class-label">Input</div>
+                  </div><label for="email" class="input-label">Email Input Label</label><input class="input w-input" maxlength="256" name="email" data-name="email" placeholder="Email Input Label" type="email" id="email" required="">
+                </div>
+                <div id="w-node-_912c5b0f-c9ed-8e30-fdd7-e1a5dc0fc16f-ab2277c7" class="column">
+                  <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                    <div class="kickoff-class-label">Input</div>
+                  </div><label for="contactname" class="input-label">Name Input Label</label><input class="input w-input" maxlength="256" name="contactname" data-name="contactname" placeholder="Name Input Label" type="text" id="contactname" required="">
+                </div>
+                <div id="w-node-_50def0d7-5cf7-d235-400e-8b67a0ab4422-ab2277c7" class="column">
+                  <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                    <div class="kickoff-class-label">Input</div>
+                  </div><label for="Phone" class="input-label">Phone Input Label</label><input class="input w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="Phone Input Label" type="tel" id="Phone" required="">
+                </div>
+                <div id="w-node-_2e39162f-5a4c-cabf-d513-d6be66d9c101-ab2277c7" class="column">
+                  <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                    <div class="kickoff-class-label">Input</div>
+                    <div class="kickoff-class-label">Select Input</div>
+                  </div><label for="Sales-Country" class="input-label">Country Input Label</label><select id="Sales-Country" data-name="Sales Country" name="Sales-Country" required="" class="input select-input w-select">
+                    <option value="">Select your country</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Akrotiri">Akrotiri</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="American Samoa">American Samoa</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Anguilla">Anguilla</option>
+                    <option value="Antarctica">Antarctica</option>
+                    <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Aruba">Aruba</option>
+                    <option value="Ashmore and Cartier Islands">Ashmore and Cartier Islands</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Azerbaijan">Azerbaijan</option>
+                    <option value="Bahamas">Bahamas</option>
+                    <option value="Bahrain">Bahrain</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Barbados">Barbados</option>
+                    <option value="Bassas da India">Bassas da India</option>
+                    <option value="Belarus">Belarus</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Belize">Belize</option>
+                    <option value="Benin">Benin</option>
+                    <option value="Bermuda">Bermuda</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                    <option value="Botswana">Botswana</option>
+                    <option value="Bouvet Island">Bouvet Island</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                    <option value="British Virgin Islands">British Virgin Islands</option>
+                    <option value="Brunei">Brunei</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Burkina Faso">Burkina Faso</option>
+                    <option value="Burma">Burma</option>
+                    <option value="Burundi">Burundi</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Cameroon">Cameroon</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Cape Verde">Cape Verde</option>
+                    <option value="Cayman Islands">Cayman Islands</option>
+                    <option value="Central African Republic">Central African Republic</option>
+                    <option value="Chad">Chad</option>
+                    <option value="Chile">Chile</option>
+                    <option value="China">China</option>
+                    <option value="Christmas Island">Christmas Island</option>
+                    <option value="Clipperton Island">Clipperton Island</option>
+                    <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Comoros">Comoros</option>
+                    <option value="Congo">Congo</option>
+                    <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
+                    <option value="Republic of the Cook Islands">Republic of the Cook Islands</option>
+                    <option value="Coral Sea Islands">Coral Sea Islands</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Cote d&#x27;Ivoire">Cote d&#x27;Ivoire</option>
+                    <option value="Croatia">Croatia</option>
+                    <option value="Cuba">Cuba</option>
+                    <option value="Cyprus">Cyprus</option>
+                    <option value="Czech Republic">Czech Republic</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Dhekelia">Dhekelia</option>
+                    <option value="Djibouti">Djibouti</option>
+                    <option value="Dominica">Dominica</option>
+                    <option value="Dominican Republic">Dominican Republic</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Equatorial Guinea">Equatorial Guinea</option>
+                    <option value="Eritrea">Eritrea</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="Ethiopia">Ethiopia</option>
+                    <option value="Europa Island">Europa Island</option>
+                    <option value="Falkland Islands (Islas Malvinas)">Falkland Islands (Islas Malvinas)</option>
+                    <option value="Faroe Islands">Faroe Islands</option>
+                    <option value="Fiji">Fiji</option>
+                    <option value="Finland">Finland</option>
+                    <option value="France">France</option>
+                    <option value="French Guiana">French Guiana</option>
+                    <option value="French Polynesia">French Polynesia</option>
+                    <option value="French Southern and Antarctic Lands">French Southern and Antarctic Lands</option>
+                    <option value="Gabon">Gabon</option>
+                    <option value="Gambia">Gambia</option>
+                    <option value="Gaza Strip">Gaza Strip</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Gibraltar">Gibraltar</option>
+                    <option value="Glorioso Islands">Glorioso Islands</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Greenland">Greenland</option>
+                    <option value="Grenada">Grenada</option>
+                    <option value="Guadeloupe">Guadeloupe</option>
+                    <option value="Guam">Guam</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Guernsey">Guernsey</option>
+                    <option value="Guinea">Guinea</option>
+                    <option value="Guinea-Bissau">Guinea-Bissau</option>
+                    <option value="Guyana">Guyana</option>
+                    <option value="Haiti">Haiti</option>
+                    <option value="Heard Island and McDonald Islands">Heard Island and McDonald Islands</option>
+                    <option value="Holy See (Vatican City)">Holy See (Vatican City)</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="India">India</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Iran">Iran</option>
+                    <option value="Iraq">Iraq</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Isle of Man">Isle of Man</option>
+                    <option value="Israel">Israel</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Jamaica">Jamaica</option>
+                    <option value="Jan Mayen">Jan Mayen</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Jersey">Jersey</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Juan de Nova Island">Juan de Nova Island</option>
+                    <option value="Kazakhstan">Kazakhstan</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Kiribati">Kiribati</option>
+                    <option value="Korea, North">Korea, North</option>
+                    <option value="Korea, South">Korea, South</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                    <option value="Laos">Laos</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Lebanon">Lebanon</option>
+                    <option value="Lesotho">Lesotho</option>
+                    <option value="Liberia">Liberia</option>
+                    <option value="Libya">Libya</option>
+                    <option value="Liechtenstein">Liechtenstein</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Macau">Macau</option>
+                    <option value="Macedonia">Macedonia</option>
+                    <option value="Madagascar">Madagascar</option>
+                    <option value="Malawi">Malawi</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="Mali">Mali</option>
+                    <option value="Malta">Malta</option>
+                    <option value="Marshall Islands">Marshall Islands</option>
+                    <option value="Martinique">Martinique</option>
+                    <option value="Mauritania">Mauritania</option>
+                    <option value="Mauritius">Mauritius</option>
+                    <option value="Mayotte">Mayotte</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Micronesia">Micronesia</option>
+                    <option value="Moldova">Moldova</option>
+                    <option value="Monaco">Monaco</option>
+                    <option value="Mongolia">Mongolia</option>
+                    <option value="Montenegro">Montenegro</option>
+                    <option value="Montserrat">Montserrat</option>
+                    <option value="Morocco">Morocco</option>
+                    <option value="Mozambique">Mozambique</option>
+                    <option value="Namibia">Namibia</option>
+                    <option value="Nauru">Nauru</option>
+                    <option value="Navassa Island">Navassa Island</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Netherlands Antilles">Netherlands Antilles</option>
+                    <option value="New Caledonia">New Caledonia</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Niue">Niue</option>
+                    <option value="Norfolk Island">Norfolk Island</option>
+                    <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Oman">Oman</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Palau">Palau</option>
+                    <option value="Panama">Panama</option>
+                    <option value="Papua New Guinea">Papua New Guinea</option>
+                    <option value="Paracel Islands">Paracel Islands</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Pitcairn Islands">Pitcairn Islands</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Puerto Rico">Puerto Rico</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Reunion">Reunion</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="Saint Helena">Saint Helena</option>
+                    <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                    <option value="Saint Lucia">Saint Lucia</option>
+                    <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                    <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                    <option value="Samoa">Samoa</option>
+                    <option value="San Marino">San Marino</option>
+                    <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="Senegal">Senegal</option>
+                    <option value="Serbia">Serbia</option>
+                    <option value="Seychelles">Seychelles</option>
+                    <option value="Sierra Leone">Sierra Leone</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Slovakia">Slovakia</option>
+                    <option value="Slovenia">Slovenia</option>
+                    <option value="Solomon Islands">Solomon Islands</option>
+                    <option value="Somalia">Somalia</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich Islands</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Spratly Islands">Spratly Islands</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Sudan">Sudan</option>
+                    <option value="Suriname">Suriname</option>
+                    <option value="Svalbard">Svalbard</option>
+                    <option value="Swaziland">Swaziland</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Syria">Syria</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Tajikistan">Tajikistan</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Timor-Leste">Timor-Leste</option>
+                    <option value="Togo">Togo</option>
+                    <option value="Tokelau">Tokelau</option>
+                    <option value="Tonga">Tonga</option>
+                    <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                    <option value="Tromelin Island">Tromelin Island</option>
+                    <option value="Tunisia">Tunisia</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Turkmenistan">Turkmenistan</option>
+                    <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                    <option value="Tuvalu">Tuvalu</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="United Arab Emirates">United Arab Emirates</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="United States">United States</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Uzbekistan">Uzbekistan</option>
+                    <option value="Vanuatu">Vanuatu</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Virgin Islands">Virgin Islands</option>
+                    <option value="Wake Island">Wake Island</option>
+                    <option value="Wallis and Futuna">Wallis and Futuna</option>
+                    <option value="West Bank">West Bank</option>
+                    <option value="Western Sahara">Western Sahara</option>
+                    <option value="Yemen">Yemen</option>
+                    <option value="Zambia">Zambia</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                  </select>
+                  <div class="select-styles w-embed">
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css" rel="stylesheet">
+                    <style>
+  .iti.iti--allow-dropdown {
+  	display: block;
+  }
+</style>
+                    <style>
+  :root {
+    /* ----------- Colors ----------- */
+    --list-bg-color: #fff;
+    --list-text-color: #6B6B6B;
+    --border-color-active: #3A86FF; /* Active State */
+    --border-color-hover: #3A86FF; /* Select Field could be the same as your form field border color */
+    --list-item-bg-color: #F3F3F4;
+    /* ----------- Spacing ----------- */
+    --list-padding: 12px 5px; /* This is the top and bottom padding for the dropdown list */
+    --list-item-padding: 9px 15px;		
+  }
+  .input-select-field {
+  	background-position: right 10px center !important;
+  }
+  .nice-select {
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    clear: both;
+    position: relative;
+    text-align: left !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    white-space: nowrap; 
+  }
+  .nice-select:hover {
+    border-color: var(--border-color-hover); 
+  }
+  .nice-select:active, .nice-select.open, .nice-select:focus {
+    border-color: var(--border-color-active);
+  }
+  .nice-select:active span.current,
+  .nice-select.open span.current,
+  .nice-select:focus span.current {
+  	color: #2E3538;
+  }
+  .nice-select.open .list {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: scale(1) translateY(0);
+    -ms-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0); 
+  }
+  .nice-select .list {
+  	min-width: 100%;
+    max-height: 201px;
+    overflow: scroll;
+    background-color: var(--list-bg-color);
+    color: var(--list-text-color);
+    border-radius: 5px;
+    box-shadow: 0px 9px 24px rgba(15, 15, 15, 0.2), 0px 3px 6px rgba(15, 15, 15, 0.1);
+    border: 1px solid rgba(15, 15, 15, 0.05);
+    box-sizing: border-box;
+    margin-top: 2px;
+    opacity: 0;
+    overflow: hidden;
+    padding: var(--list-padding);
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform: scale(0.75) translateY(-21px);
+    -ms-transform: scale(0.75) translateY(-21px);
+    transform: scale(0.75) translateY(-21px);
+    -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    z-index: 9; 
+  }
+  .nice-select .list:hover .option:not(:hover) {
+    background-color: transparent !important; 
+  }
+  .nice-select .option {
+  	border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: var(--list-item-line-height);
+    list-style: none;
+    min-height: var(--list-item-min-height);
+    outline: none;
+    padding: var(--list-item-padding);
+    text-align: left;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    margin-bottom: 1px;
+  }
+  .nice-select .option:last-child {
+  	margin-bottom: 0px;
+  }
+  .nice-select .option:first-child {
+    display: none;
+  }
+  span.current {
+    color: #2E3538;
+  }
+  .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+    background-color: var(--list-item-bg-color);
+    color: #2E3538;
+  }
+</style>
+                    <style>
+	.iti__country-list {
+  	border-radius: 5px;
+  	padding: 5px;
+    box-shadow: 0px 9px 24px rgba(15, 15, 15, 0.2), 0px 3px 6px rgba(15, 15, 15, 0.1);
+  }
+  .iti__country {
+    border-radius: 5px;
+    color: #6B6B6B;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .iti__dial-code {
+  	color: #6B6B6B;
+  }
+  .iti__flag {
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .iti__country:hover {
+  	background: #3A86FF;
+    color: #fff;
+  }
+  .iti__country:hover .iti__dial-code {
+  	color: #fff;
+  }
+  .iti__flag-container {
+  	padding: 0px;
+  }
+  .iti__selected-flag {
+  	padding: 10px 10px 10px 14px;
+    /* background: rgba(255,255,255,0) !important; */
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    border-left: 1px solid rgba(255, 255, 255, 0);
+    border-right: 1px solid #E9E9E9;
+    width: 66px;
+    margin-top: 1px;
+    margin-left: 1px;
+  }
+  .input-field.phone-input-padding {
+  	padding-left: 80px !important;
+  }
+  .iti__arrow {
+  	border: none;
+  	width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    transition: transform .3s ease-in-out;
+    transform: rotate(0deg);
+  	background-image: url('https://uploads-ssl.webflow.com/60c1fb51c4706f216cc5b134/60f5d57b6f893e395915652f_select%20arrow.svg');
+  }
+  .iti__arrow.iti__arrow--up {
+  	transform: rotate(-180deg);
+  	background-image: url('https://uploads-ssl.webflow.com/60c1fb51c4706f216cc5b134/610a91f254862fb9576f21dd_16x16%20input%20arrow%20blue.svg');
+  }
+  .iti.iti--allow-dropdown:focus .input-field,
+  .iti.iti--allow-dropdown:hover .input-field {
+  	border: 1px solid #3A86FF;
+    color: #2E3538;
+    background: #fff;
+  }
+    .iti.iti--allow-dropdown {
+  	width: 100%;
+  }
+  #Phone {
+  padding-left: 80px !important;
+  width: 100% !important;
+}
+</style>
+                  </div>
+                </div>
+                <div id="w-node-_83b685eb-3549-716c-8278-dfa1d5181136-ab2277c7" class="column">
+                  <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                    <div class="kickoff-class-label">Input</div>
+                    <div class="kickoff-class-label">Text Area</div>
+                  </div><label for="Text-Area" class="input-label">Text Area</label><textarea placeholder="Text Area Field" maxlength="5000" id="Text-Area" name="Text-Area" data-name="Text Area" class="input text-area w-input"></textarea>
+                </div>
+                <div id="w-node-_3b738e3d-3b19-e021-8fe0-00bc892b3751-ab2277c7" class="column">
+                  <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                    <div class="kickoff-class-label">Checkbox Field</div>
+                  </div><label class="w-checkbox checkbox-field">
+                    <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="checkbox" name="checkbox" data-name="Checkbox" style="opacity:0;position:absolute;z-index:-1"><span class="checkbox-label w-form-label" for="checkbox">Checkbox Field</span>
+                  </label>
+                </div>
+                <div id="w-node-f079c4dc-c847-6222-e870-3f41ce9fb9d8-ab2277c7" class="column">
+                  <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                    <div class="kickoff-class-label">Radio Button</div>
+                  </div><label class="radio-field w-radio">
+                    <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input"></div><input type="radio" data-name="Radio Buttons" id="First Select" name="Radio-Buttons" style="opacity:0;position:absolute;z-index:-1" value="First Select"><span for="First Select" class="radio-button-label w-form-label">Radio</span>
+                  </label><label class="radio-field w-radio">
+                    <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input"></div><input type="radio" data-name="Radio Buttons" id="Second Select" name="Radio-Buttons" style="opacity:0;position:absolute;z-index:-1" value="Second Select"><span for="Second Select" class="radio-button-label w-form-label">Radio</span>
+                  </label>
+                </div>
+              </div>
+            </form>
+            <div class="w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section padding-l">
+        <div class="container">
+          <h3 class="margin-l">Container</h3>
+          <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">Container</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="kickoff-block"></div>
+        </div>
+      </div>
+      <div id="Global-Combo-Classes" class="section padding-l">
+        <div class="container">
+          <h3 class="no-margin">Section</h3>
+        </div>
+      </div>
+      <div class="section padding-l">
+        <div class="container">
+          <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">Section</div>
+          </div>
+          <h2 class="max-width-xl no-margin">Example Set Up for a Default Section</h2>
+        </div>
+      </div>
+      <div class="section padding-l">
+        <div class="container margin-bot-l">
+          <h2 id="Combo-Classes" data-scroll="mid">Combo Classes</h2>
+          <p class="margin-l">*Note: Figma set up has Desktop, Tablet and Mobile side by side. On Webflow we need to adjust Fonts on specific brakepoints.</p>
+        </div>
+        <div class="container">
+          <div class="label">Combo Classes</div>
+          <h3 class="margin-l">Paddings</h3>
+          <div class="padding-xxs">
+            <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+              <div class="kickoff-class-label">Padding XXS</div>
+            </div>
+            <div class="kickoff-padding-helper">Change the parent class padding</div>
+          </div>
+          <div class="padding-xs">
+            <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+              <div class="kickoff-class-label">Padding XS</div>
+            </div>
+            <div class="kickoff-padding-helper">Change the parent class padding</div>
+          </div>
+          <div class="padding-s">
+            <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+              <div class="kickoff-class-label">Padding S</div>
+            </div>
+            <div class="kickoff-padding-helper">Change the parent class padding</div>
+          </div>
+          <div class="padding-m">
+            <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+              <div class="kickoff-class-label">Padding M</div>
+            </div>
+            <div class="kickoff-padding-helper">Change the parent class padding</div>
+          </div>
+          <div class="padding-l">
+            <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+              <div class="kickoff-class-label">Padding L</div>
+            </div>
+            <div class="kickoff-padding-helper">Change the parent class padding</div>
+          </div>
+          <div class="padding-xl">
+            <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+              <div class="kickoff-class-label">Padding XL</div>
+            </div>
+            <div class="kickoff-padding-helper">Change the parent class padding</div>
+          </div>
+          <div class="padding-xxl">
+            <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+              <div class="kickoff-class-label">Padding XXL</div>
+            </div>
+            <div class="kickoff-padding-helper">Change the parent class padding</div>
+          </div>
+          <div class="padding-3xl">
+            <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+              <div class="kickoff-class-label">Padding 3XL</div>
+            </div>
+            <div class="kickoff-padding-helper">Change the parent class padding</div>
+          </div>
+          <div class="no-padding">
+            <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+              <div class="kickoff-class-label">No Padding</div>
+            </div>
+            <div class="kickoff-padding-helper">Change the parent class padding</div>
+          </div>
+        </div>
+      </div>
+      <div class="section padding-l">
+        <div class="container">
+          <div class="label">Combo Classes</div>
+          <h3 class="margin-l">Margins</h3>
+          <div class="kickoff-styles-wrap margin-bot-xl">
+            <div id="w-node-_3b5b668e-4047-df8a-2a71-883f68fe773d-ab2277c7" class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Margin XXS</div>
+              </div>
+              <h4 class="margin-xxs">Back-end of third quarter pushback.</h4>
+            </div>
+            <div id="w-node-_3b5b668e-4047-df8a-2a71-883f68fe7744-ab2277c7" class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Margin XS</div>
+              </div>
+              <h4 class="margin-xs">Back-end of third quarter pushback.</h4>
+            </div>
+            <div id="w-node-_3b5b668e-4047-df8a-2a71-883f68fe774b-ab2277c7" class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Margin S</div>
+              </div>
+              <h4 class="margin-s">Back-end of third quarter pushback.</h4>
+            </div>
+            <div id="w-node-_3b5b668e-4047-df8a-2a71-883f68fe7752-ab2277c7" class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Margin M</div>
+              </div>
+              <h4 class="margin-m">Back-end of third quarter pushback.</h4>
+            </div>
+            <div id="w-node-_3b5b668e-4047-df8a-2a71-883f68fe7759-ab2277c7" class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Margin L</div>
+              </div>
+              <h4 class="margin-l">Back-end of third quarter pushback.</h4>
+            </div>
+            <div id="w-node-_3b5b668e-4047-df8a-2a71-883f68fe7760-ab2277c7" class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Margin XL</div>
+              </div>
+              <h4 class="margin-xl">Back-end of third quarter pushback.</h4>
+            </div>
+            <div id="w-node-_3b5b668e-4047-df8a-2a71-883f68fe7767-ab2277c7" class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Margin XXL</div>
+              </div>
+              <h4 class="margin-xxl">Back-end of third quarter pushback.</h4>
+            </div>
+            <div id="w-node-_3b5b668e-4047-df8a-2a71-883f68fe776e-ab2277c7" class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Margin 3XL</div>
+              </div>
+              <h4 class="margin-3xl">Back-end of third quarter pushback.</h4>
+            </div>
+            <div class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">No Margin</div>
+              </div>
+              <h4 class="no-margin">Back-end of third quarter pushback.</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section padding-l">
+        <div class="container">
+          <div class="label">Combo Classes</div>
+          <h3 class="margin-l">Text Alignment</h3>
+          <div class="margin-m">
+            <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+              <div class="kickoff-class-label">Text Left</div>
+            </div>
+            <p class="text-left">We try your eye, but can you change everything? in an ideal world nor can we try some other colours maybe just do what you think.</p>
+          </div>
+          <div class="margin-m">
+            <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+              <div class="kickoff-class-label">Text Center</div>
+            </div>
+            <p class="text-center">We try your eye, but can you change everything? in an ideal world nor can we try some other colours maybe just do what you think.</p>
+          </div>
+          <div class="margin-m">
+            <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+              <div class="kickoff-class-label">Text Right</div>
+            </div>
+            <p class="text-right">We try your eye, but can you change everything? in an ideal world nor can we try some other colours maybe just do what you think.</p>
+          </div>
+        </div>
+      </div>
+      <div class="section padding-l">
+        <div class="container">
+          <div class="label">Combo Classes</div>
+          <h3 class="margin-l">Container</h3>
+          <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">Container</div>
+            <div class="kickoff-class-label">Grid</div>
+          </div>
+        </div>
+        <div class="container grid">
+          <div id="w-node-_6687739a-8afa-f819-d62e-ad969d63468a-ab2277c7" class="kickoff-block"></div>
+          <div id="w-node-_97091ddd-8bf2-950c-431b-e0f779050914-ab2277c7" class="kickoff-block">
+            <div class="kickoff-padding-helper">Change the Container Grid class Grid settings</div>
+          </div>
+          <div id="w-node-dfb41515-7bbe-9c22-ae41-2ae456bbd3c8-ab2277c7" class="kickoff-block"></div>
+          <div id="w-node-_5314e0c2-91de-4655-65f7-77c8440d802d-ab2277c7" class="kickoff-block"></div>
+          <div id="w-node-d14c08c4-425f-d607-60fa-4d425e793376-ab2277c7" class="kickoff-block"></div>
+          <div id="w-node-fa90f26b-7a5f-5b57-8c0c-501e0fee1314-ab2277c7" class="kickoff-block"></div>
+          <div id="w-node-ba78244a-0733-866f-3044-ca7cd30b15ce-ab2277c7" class="kickoff-block"></div>
+          <div id="w-node-d5d107d6-98e0-ad0e-b4b2-11b0183bfe7a-ab2277c7" class="kickoff-block"></div>
+        </div>
+      </div>
+      <div class="section padding-l">
+        <div class="container">
+          <div class="label">Combo Classes</div>
+          <h3 class="margin-l">Flex Overrides</h3>
+          <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">Flex Center</div>
+          </div>
+          <div class="flex-center">
+            <div class="kickoff-block"></div>
+          </div>
+          <div class="kickoff-classes-wrap margin-top-m"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">Flex Left</div>
+          </div>
+          <div class="flex-left">
+            <div class="kickoff-block"></div>
+          </div>
+          <div class="kickoff-classes-wrap margin-top-m"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">Flex Right</div>
+          </div>
+          <div class="flex-right">
+            <div class="kickoff-block"></div>
+          </div>
+          <div class="kickoff-classes-wrap margin-top-m"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">Flex Stretch</div>
+          </div>
+          <div class="flex-stretch">
+            <div class="kickoff-block"></div>
+          </div>
+          <div class="kickoff-classes-wrap margin-top-m"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">Flex Space Between</div>
+          </div>
+          <div class="flex-space-between">
+            <div class="kickoff-block"></div>
+            <div class="kickoff-block"></div>
+          </div>
+          <div class="kickoff-classes-wrap margin-top-m"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+            <div class="kickoff-class-label">Flex Space Around</div>
+          </div>
+          <div class="flex-space-around">
+            <div class="kickoff-block"></div>
+            <div class="kickoff-block"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section padding-l">
+        <div class="container margin-l">
+          <h2 id="Global-Classes" data-scroll="mid">Global Classes</h2>
+          <p>*Note: Figma set up has Desktop, Tablet and Mobile side by side. On Webflow we need to adjust Fonts on specific brakepoints.</p>
+        </div>
+        <div class="container margin-l">
+          <div class="label">Global Classes</div>
+          <h3>Column</h3>
+        </div>
+        <div class="container grid">
+          <div id="w-node-_67575590-25d7-c14e-7162-ab76ff30550f-ab2277c7" class="column">
+            <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+              <div class="kickoff-class-label">Column</div>
+            </div>
+            <h3 class="max-width-m margin-xs">Example of the column class</h3>
+            <p class="margin-m">Pretty handy for positioning in the grid.</p>
+            <a href="#" class="button w-button">Touch me</a>
+          </div>
+          <div id="w-node-a74b7cc9-c9ae-45b0-cfea-3ced5af403ef-ab2277c7" class="column">
+            <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+              <div class="kickoff-class-label">Column</div>
+            </div>
+            <h3 class="max-width-m margin-xs">Example of the column class</h3>
+            <p class="margin-m">Pretty handy for positioning in the grid.</p>
+            <a href="#" class="button w-button">Touch me</a>
+          </div>
+          <div id="w-node-df6c9add-b613-2ff8-15c8-d0804ca0e6fc-ab2277c7" class="column">
+            <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+              <div class="kickoff-class-label">Column</div>
+            </div>
+            <h3 class="max-width-m margin-xs">Example of the column class</h3>
+            <p class="margin-m">Pretty handy for positioning in the grid.</p>
+            <a href="#" class="button w-button">Touch me</a>
+          </div>
+        </div>
+      </div>
+      <div class="section padding-l">
+        <div class="container margin-l">
+          <div class="label">Global Classes</div>
+          <h3 class="no-margin">Button Wrapper</h3>
+        </div>
+        <div class="container">
+          <div class="column">
+            <h4 class="max-width-m margin-xs">Example of the column class</h4>
+            <p class="margin-l">Pretty handy for positioning in the grid.</p>
+            <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+              <div class="kickoff-class-label">Button Wrapper</div>
+            </div>
+            <div class="button-wrapper">
+              <a href="#" class="button w-button">Touch me</a>
+              <a href="#" class="button-variant w-button">Touch me variant</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section padding-l">
+        <div class="container">
+          <div class="label">Global Classes</div>
+          <h3 class="margin-l">Main Wrapper</h3>
+          <div class="column">
+            <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+              <div class="kickoff-class-label">Main Wrapper</div>
+            </div>
+            <main class="main-wrapper"></main>
+          </div>
+        </div>
+      </div>
+      <div class="section padding-l">
+        <div class="container">
+          <div class="label">Global Classes</div>
+          <h3 class="margin-l">Icons</h3>
+          <div class="kickoff-styles-wrap">
+            <div class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Icon S</div>
+              </div><img src="../images/Heart-Icon.svg" loading="lazy" alt="" class="icon-s">
+            </div>
+            <div class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Icon M</div>
+              </div><img src="../images/Heart-Icon.svg" loading="lazy" alt="" class="icon-m">
+            </div>
+            <div class="column">
+              <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Icon L</div>
+              </div><img src="../images/Heart-Icon.svg" loading="lazy" alt="" class="icon-l">
+            </div>
+          </div>
+        </div>
+        <div class="container"></div>
+      </div>
+      <div class="section padding-l">
+        <div class="container">
+          <div class="label">Global Classes</div>
+          <h3 class="margin-l">Swiper</h3>
+          <div class="component-swiper">
+            <div class="kickoff-classes-wrap"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+              <div class="kickoff-class-label">{Component Name} Swiper</div>
+            </div>
+            <div class="swiper-wrapper component-list">
+              <div class="kickoff-classes-wrap margin-left-s"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                <div class="kickoff-class-label">Swiper Wrapper</div>
+                <div class="kickoff-class-label">{Component Name} List</div>
+              </div>
+              <div class="swiper-slide component-item">
+                <div class="kickoff-classes-wrap margin-left-m"><img src="../images/Class-Icon.svg" loading="lazy" alt="Icon - Webflow Desktop viewport" class="kickoff-class-icon">
+                  <div class="kickoff-class-label">Swiper Slide</div>
+                  <div class="kickoff-class-label">{Component Name} Item</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="component-swiper w-dyn-list">
+            <div role="list" class="swiper-wrapper component-list w-dyn-items">
+              <div role="listitem" class="swiper-slide component-item w-dyn-item"></div>
+            </div>
+            <div class="collection-empty w-dyn-empty">
+              <div>No items found.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section padding-l">
+        <div class="container">
+          <div class="label">Global Classes</div>
+          <h3 class="margin-m">CMS Collections Set Up</h3>
+          <div class="component-wrapper w-dyn-list">
+            <div role="list" class="component-list w-dyn-items">
+              <div role="listitem" class="component-item w-dyn-item"></div>
+            </div>
+            <div class="collection-empty w-dyn-empty">
+              <div>No items found.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section padding-l">
+        <div class="container">
+          <div class="label">Global Classes</div>
+          <h3 class="margin-m">Overflow Hidden</h3>
+          <div class="overflow-hidden"></div>
+        </div>
+      </div>
+      <div class="section padding-l">
+        <div class="container">
+          <div class="label">Global Classes</div>
+          <h3>Relative</h3>
+          <div class="relative"></div>
+        </div>
+      </div>
+      <div class="section padding-l">
+        <div class="container">
+          <div class="label">Global Classes</div>
+          <h3>Z 99</h3>
+          <div class="z-99"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-section">
+      <div class="container grid relative">
+        <div id="w-node-_24a98d7f-451d-b15b-d32b-dcc2972844a8-654d2164" class="column gap-2rem max-285">
+          <div data-w-id="99030ed9-632a-b3a7-5021-2218596e377f" class="newsletter-heading max-width-250px"><span class="text-span">Warning:</span> Do NOT follow unless you love buyer attention</div>
+          <div data-w-id="c768acd6-5e12-7793-3f5c-685ecb03aa55" class="monthly-updates-form w-form">
+            <form id="wf-form-Monthly-Updates-Form" name="wf-form-Monthly-Updates-Form" data-name="Monthly Updates Form" method="get" form-validation="true" data-wf-page-id="6511cf8f85719e59ab2277c7" data-wf-element-id="c768acd6-5e12-7793-3f5c-685ecb03aa56"><label for="name" class="input-label hide">Enter email <span class="required-star">*</span></label>
+              <div class="div-block-3"><input class="input w-input" maxlength="256" name="Email" data-name="Email" placeholder="Enter your email" trigger="focusout" type="email" id="email" required="">
+                <div error-label="email" class="no-error">Please enter valid email!</div>
+              </div><input type="submit" data-wait="Please wait..." id="submit" class="green-button-dark-bg _100 hide w-button" value="Submit">
+              <a id="fake-submit" href="#" class="green-button-dark-bg-submit w-inline-block">
+                <div>Follow Us</div>
+                <div class="w-embed"><svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.49829 0.800797C6.44763 0.713466 6.37491 0.640976 6.28743 0.590586C6.19994 0.540195 6.10075 0.513672 5.99979 0.513672C5.89883 0.513672 5.79964 0.540195 5.71216 0.590586C5.62467 0.640976 5.55196 0.713466 5.5013 0.800797L3.93724 3.49669C3.88307 3.58993 3.80865 3.66982 3.71948 3.73047C3.63031 3.79111 3.52866 3.83096 3.42204 3.84708L0.490438 4.28967C-0.00171616 4.36459 -0.174604 4.98583 0.209207 5.30395L2.39278 7.11235C2.59448 7.28005 2.68957 7.54457 2.64058 7.80217L2.06948 10.8018C2.0492 10.9083 2.05938 11.0184 2.09887 11.1194C2.13836 11.2204 2.20554 11.3082 2.2927 11.3727C2.37986 11.4373 2.48345 11.4759 2.59158 11.4842C2.69971 11.4924 2.80798 11.4701 2.90395 11.4196L5.66439 9.96615C5.76782 9.91174 5.88293 9.88331 5.99979 9.88331C6.11666 9.88331 6.23177 9.91174 6.3352 9.96615L9.09564 11.4196C9.19161 11.4701 9.29988 11.4924 9.40801 11.4842C9.51613 11.4759 9.61973 11.4373 9.70689 11.3727C9.79405 11.3082 9.86123 11.2204 9.90072 11.1194C9.9402 11.0184 9.95039 10.9083 9.93011 10.8018L9.359 7.80217C9.3348 7.67554 9.34502 7.54472 9.38861 7.42339C9.4322 7.30205 9.50755 7.19463 9.60681 7.11235L11.791 5.30337C12.1742 4.98641 12.0013 4.36401 11.5086 4.28967L8.57813 3.84708C8.4714 3.83104 8.36964 3.79123 8.28036 3.73058C8.19108 3.66994 8.11658 3.59 8.06234 3.49669L6.49829 0.800797Z" fill="currentColor"></path>
+                  </svg></div>
+              </a>
+            </form>
+            <div class="monthly-updates-success w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div class="monthly-updates-error w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+          <a href="https://www.linkedin.com/company/getstarstruck/" class="linked-in-cta w-inline-block">
+            <div class="contact-icon-embed w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 19.9941V13.623C20 12.5836 19.5871 11.5869 18.8522 10.8519C18.1173 10.117 17.1205 9.70413 16.0811 9.70413C15.0594 9.70413 13.8693 10.3292 13.2923 11.2669V9.93253H9.93839V19.9941H13.2923V14.0678C13.2923 13.1421 14.0376 12.3848 14.9632 12.3848C15.4095 12.3848 15.8376 12.5621 16.1532 12.8777C16.4688 13.1934 16.6461 13.6214 16.6461 14.0678V19.9941H20ZM6.03156 8.04523C6.56717 8.04523 7.08085 7.83246 7.45958 7.45372C7.83832 7.07499 8.05109 6.56131 8.05109 6.0257C8.05109 4.90774 7.14951 3.99414 6.03156 3.99414C5.49275 3.99414 4.97602 4.20818 4.59503 4.58917C4.21404 4.97016 4 5.48689 4 6.0257C4 7.14365 4.9136 8.04523 6.03156 8.04523ZM7.70248 19.9941V9.93253H4.37265V19.9941H7.70248Z" fill="currentColor"></path>
+              </svg></div>
+            <div>Follow us on LinkedIn</div>
+          </a>
+        </div>
+        <div id="w-node-_0fe7dc99-5438-5d84-1cc7-946981878a64-654d2164" class="column gap-7rem max">
+          <div data-w-id="ec76a2d4-3b7b-7982-a42a-01e1d1dbd412" class="page-link-wrapper">
+            <div class="footer-label">Jump to page</div>
+            <a href="../attention.html" class="footer-link w-inline-block">
+              <div>Attention Seekers</div>
+            </a>
+            <a id="getSeenNowBtn" data-search="start" href="#" class="footer-link w-inline-block">
+              <div>Get Seen Now</div>
+            </a>
+            <a href="https://marketplaces.getstarstruck.com/" class="footer-link w-inline-block">
+              <div>Marketplaces</div>
+            </a>
+            <a href="../marketplace-led-growth.html" class="footer-link w-inline-block">
+              <div>Your Go to Marketplace</div>
+            </a>
+            <a href="../pricing.html" class="footer-link w-inline-block">
+              <div>Pricing</div>
+            </a>
+          </div>
+          <div data-w-id="ca984585-3cc7-abe0-fbae-c12cf42f5b6b" class="social-link-wrapper">
+            <div class="div-block-2">
+              <div class="footer-label">What questions do you have for us?</div>
+              <div class="footer-devider-line"></div>
+            </div>
+            <div class="contact-info-block">
+              <div class="link-wrap">
+                <a href="mailto:seen@getstarstruck.com" class="contact-link w-inline-block">
+                  <div class="contact-icon-embed w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.3333 9.57878V12.9121C18.3333 15.8288 16.6666 17.0788 14.1666 17.0788H5.83329C3.33329 17.0788 1.66663 15.8288 1.66663 12.9121V7.07878C1.66663 4.16211 3.33329 2.91211 5.83329 2.91211H9.99996" stroke="currentColor" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M5.83337 7.49609L8.44171 9.57943C9.30004 10.2628 10.7084 10.2628 11.5667 9.57943" stroke="currentColor" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M16.235 2.34531L16.4684 2.82031C16.585 3.05364 16.8767 3.27031 17.135 3.32031L17.4517 3.37031C18.4017 3.52864 18.6267 4.22864 17.9433 4.92031L17.6517 5.21197C17.46 5.41197 17.3517 5.79531 17.41 6.06197L17.4517 6.23698C17.71 7.38698 17.1017 7.82863 16.1017 7.22863L15.885 7.10364C15.6267 6.95364 15.21 6.95364 14.9517 7.10364L14.735 7.22863C13.7267 7.83697 13.1183 7.38698 13.385 6.23698L13.4267 6.06197C13.485 5.79531 13.3767 5.41197 13.185 5.21197L12.8933 4.92031C12.21 4.22864 12.435 3.52864 13.385 3.37031L13.7017 3.32031C13.9517 3.27864 14.2517 3.05364 14.3683 2.82031L14.6017 2.34531C15.0517 1.43698 15.785 1.43698 16.235 2.34531Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></div>
+                  <div>seen@getstarstruck.com</div>
+                </a>
+                <a href="https://wa.me/message/OBH3NFW2FQ5OC1" target="_blank" class="contact-link w-inline-block">
+                  <div class="contact-icon-embed w-embed"><svg width="24" height="29" viewbox="0 0 24 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1119_7387)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.99512C6.477 4.99512 2 9.47212 2 14.9951C2 16.8851 2.525 18.6551 3.438 20.1631L2.546 23.1951C2.49478 23.3692 2.49141 23.5539 2.53624 23.7297C2.58107 23.9055 2.67245 24.066 2.80076 24.1944C2.92907 24.3227 3.08958 24.414 3.26542 24.4589C3.44125 24.5037 3.62592 24.5003 3.8 24.4491L6.832 23.5571C8.39068 24.5002 10.1782 24.9976 12 24.9951C17.523 24.9951 22 20.5181 22 14.9951C22 9.47212 17.523 4.99512 12 4.99512ZM9.738 17.2581C11.761 19.2801 13.692 19.5471 14.374 19.5721C15.411 19.6101 16.421 18.8181 16.814 17.8991C16.8636 17.7848 16.8816 17.6592 16.8661 17.5356C16.8507 17.4119 16.8023 17.2947 16.726 17.1961C16.178 16.4961 15.437 15.9931 14.713 15.4931C14.5618 15.3886 14.3761 15.3467 14.1947 15.3761C14.0133 15.4056 13.8503 15.5041 13.74 15.6511L13.14 16.5661C13.1085 16.6153 13.0593 16.6506 13.0026 16.6647C12.9459 16.6788 12.8859 16.6708 12.835 16.6421C12.428 16.4091 11.835 16.0131 11.409 15.5871C10.983 15.1611 10.611 14.5951 10.402 14.2141C10.3761 14.1657 10.3686 14.1096 10.3809 14.056C10.3932 14.0025 10.4245 13.9553 10.469 13.9231L11.393 13.2371C11.5249 13.1225 11.61 12.9633 11.6321 12.79C11.6542 12.6166 11.6118 12.4412 11.513 12.2971C11.065 11.6411 10.543 10.8071 9.786 10.2541C9.68831 10.1833 9.57386 10.1392 9.45393 10.126C9.334 10.1129 9.21271 10.1312 9.102 10.1791C8.182 10.5731 7.386 11.5831 7.424 12.6221C7.449 13.3041 7.716 15.2351 9.738 17.2581Z" fill="currentColor"></path>
+                      </g>
+                      <defs>
+                        <clippath id="clip0_1119_7387">
+                          <rect width="24" height="24" fill="currentColor" transform="translate(0 2.99512)"></rect>
+                        </clippath>
+                      </defs>
+                    </svg></div>
+                  <div>WhatsApp</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="w-node-_80d21f2e-3bd8-13e9-120a-e97a82941133-654d2164" data-w-id="80d21f2e-3bd8-13e9-120a-e97a82941133" class="footer-copyright-div">
+          <a aria-label="Visit Starstruck Homepage" href="../index.html" class="footer-logo-wrap w-inline-block">
+            <div class="footer-logo-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 157 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M144.94 20.0705H141.361V4.01172H144.94V10.9629L151.249 4.01172H155.722L149.551 10.4811L156.227 20.0705H151.868L147.074 13.0735L144.94 15.2988V20.0705Z" fill="white"></path>
+                <path d="M131.511 20.4843C126.601 20.4843 123.206 17.1808 123.206 11.9961C123.206 7.04078 126.441 3.59961 131.511 3.59961C135.778 3.59961 138.714 6.05431 139.425 10.2296H135.755C135.342 8.14195 133.69 6.78843 131.511 6.78843C128.666 6.78843 126.854 8.83019 126.854 11.9961C126.854 15.2308 128.666 17.2955 131.511 17.2955C133.713 17.2955 135.365 15.9419 135.755 13.8543H139.425C138.668 18.0296 135.732 20.4843 131.511 20.4843Z" fill="white"></path>
+                <path d="M114.424 20.4835C110.318 20.4835 107.45 18.2582 107.45 14.7941V4.01172H111.029V14.7023C111.029 16.2623 112.337 17.2488 114.401 17.2488C116.466 17.2488 117.797 16.2623 117.797 14.7023V4.01172H121.375V14.7941C121.375 18.1435 118.668 20.4835 114.424 20.4835Z" fill="white"></path>
+                <path d="M95.49 20.0705H91.9111V4.01172H100.308C103.382 4.01172 105.515 5.91583 105.515 8.66877C105.515 10.7335 103.978 12.3623 101.661 12.8441C102.923 13.0276 103.863 13.7617 104.322 14.9317L106.249 20.0705H102.441L100.789 15.5052C100.583 14.9088 100.055 14.5876 99.3441 14.5876H95.49V20.0705ZM95.49 7.20054V11.4676H99.9405C101.317 11.4676 102.005 10.3894 102.005 9.33406C102.005 8.25583 101.317 7.20054 99.9405 7.20054H95.49Z" fill="white"></path>
+                <path d="M84.9408 20.0705H81.362V7.20054H76.2002V4.01172H90.0796V7.20054H84.9408V20.0705Z" fill="white"></path>
+                <path d="M69.244 20.4843C64.8392 20.4843 61.9716 18.3966 61.7422 15.0243H65.3898C65.6651 16.4696 66.904 17.3643 69.221 17.3643C70.9416 17.3643 71.8592 16.7678 71.8592 15.7355C71.8592 14.8178 71.3316 14.4278 69.7257 13.969L67.271 13.2578C64.8163 12.5467 62.1781 11.5831 62.1781 8.44019C62.1781 5.73314 64.4034 3.59961 68.1887 3.59961C72.2492 3.59961 74.9563 5.91666 75.1169 9.26607H71.4922C71.4234 7.91254 70.3681 6.74255 68.0969 6.74255C66.5828 6.74255 65.711 7.31607 65.711 8.23372C65.711 9.26607 66.6516 9.61019 68.4181 10.1608L70.6892 10.8719C73.1898 11.6519 75.4839 12.5008 75.4839 15.529C75.4839 18.5572 73.0292 20.4843 69.244 20.4843Z" fill="white"></path>
+                <path d="M49.5525 20.0705H45.9736V4.01172H54.3701C57.4442 4.01172 59.5777 5.91583 59.5777 8.66877C59.5777 10.7335 58.0407 12.3623 55.7236 12.8441C56.9854 13.0276 57.926 13.7617 58.3848 14.9317L60.3119 20.0705H56.5036L54.8519 15.5052C54.6454 14.9088 54.1177 14.5876 53.4066 14.5876H49.5525V20.0705ZM49.5525 7.20054V11.4676H54.003C55.3795 11.4676 56.0677 10.3894 56.0677 9.33406C56.0677 8.25583 55.3795 7.20054 54.003 7.20054H49.5525Z" fill="white"></path>
+                <path d="M23.2904 20.0705H19.7116V7.20054H14.5498V4.01172H28.4292V7.20054H23.2904V20.0705Z" fill="white"></path>
+                <path d="M7.50176 20.4843C3.09706 20.4843 0.229412 18.3966 0 15.0243H3.64764C3.92294 16.4696 5.16176 17.3643 7.47882 17.3643C9.19941 17.3643 10.1171 16.7678 10.1171 15.7355C10.1171 14.8178 9.58941 14.4278 7.98352 13.969L5.52882 13.2578C3.07412 12.5467 0.435882 11.5831 0.435882 8.44019C0.435882 5.73314 2.66118 3.59961 6.44647 3.59961C10.5071 3.59961 13.2141 5.91666 13.3747 9.26607H9.74999C9.68117 7.91254 8.62588 6.74255 6.3547 6.74255C4.84059 6.74255 3.96882 7.31607 3.96882 8.23372C3.96882 9.26607 4.90941 9.61019 6.67588 10.1608L8.94705 10.8719C11.4476 11.6519 13.7418 12.5008 13.7418 15.529C13.7418 18.5572 11.2871 20.4843 7.50176 20.4843Z" fill="white"></path>
+                <path d="M44.2735 9.13541C44.703 8.51624 44.2949 7.67257 43.5433 7.62581L38.8804 7.33573C38.6294 7.32011 38.395 7.20815 38.2265 7.02341L35.0032 3.48781C34.5239 2.96205 33.6531 3.11963 33.382 3.7812L31.5746 8.19128C31.4667 8.45459 31.2484 8.65836 30.9774 8.74862L26.6239 10.1989C25.8823 10.446 25.7148 11.4159 26.3326 11.8852L30.6544 15.168C30.8839 15.3423 31.0223 15.61 31.0321 15.898L31.1953 20.7195C31.2227 21.528 32.1773 21.94 32.7965 21.4104L35.9336 18.7276C36.3171 18.3995 36.8266 18.2579 37.3228 18.3414L41.5263 19.0489C42.2269 19.1668 42.8187 18.5195 42.6338 17.8375L41.5156 13.7125C41.4413 13.4383 41.4925 13.1444 41.6556 12.9093L44.2735 9.13541Z" fill="white"></path>
+              </svg></div>
+          </a>
+          <div class="div-block">
+            <div class="footer-copyright absolute-copyright">© Starstruck <span id="copyright" class="copyright-year">2023</span><span class="copyright-year">. All rights reserved</span></div>
+            <a href="../privacy-policy.html" class="contact-link-text mini-text">Privacy</a>
+            <a href="../terms-conditions.html" class="contact-link-text mini-text">Terms</a>
+          </div>
+        </div>
+        <div id="w-node-_054f6fc5-6755-2da9-5d64-4c5f44341873-654d2164" class="hide w-embed">
+          <style>
+  @media screen and (min-width: 992px) {
+    .footer-star {
+      position: absolute;
+      top: 40%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+    }
+  }
+</style>
+        </div><img src="../images/main-asset-Star_1.svg" loading="lazy" id="w-node-e21ad707-027a-83b8-a153-2fe0faa2492a-654d2164" alt="Footer Star" class="footer-star">
+      </div>
+    </footer>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6511cf8f85719e59ab2277c9" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="../js/webflow.js" type="text/javascript"></script>
+  <script>document.getElementById('copyright').replaceWith(document.createTextNode(new Date().getFullYear()))</script>
+  <script>
+  document.getElementById('fake-submit').addEventListener('click', () => {
+    document.getElementById('submit').click()
+  })
+</script>
+  <script>
+  document.getElementById('wf-form-Search-Form').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.keyCode === 13) {
+      e.preventDefault();
+    }
+  });
+</script>
+  <script src="https://flow-ninja-assets.s3.amazonaws.com/ninja-script/form.min.js"></script>
+  <!--  Count Up Interaction  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+  <script>
+  jQuery(document).ready(function( $ ) {
+    // Flag to track whether the counter script has been triggered
+    var counterScriptTriggered = false;
+    // Function to run the counter script
+    function runCounterScript() {
+      if (!counterScriptTriggered) {
+        $('.counterup').counterUp({
+          delay: 40, // the delay time in ms
+          time: 1200 // the speed time in ms
+        });
+        counterScriptTriggered = true; // Set the flag to true to indicate the script has been triggered
+      }
+    }
+    // Bind the focus event to the searchInput element
+    $('#searchInput').on('focus', function () {
+      runCounterScript();
+    });
+  });
+</script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.min.js"></script>
+  <style>
+/* Style for the error text below input */
+label.error {
+color: red;
+font-size: 12px;
+font-weight: 400;
+margin-top: -12px;
+}
+/* Style for the error state of input */
+.w-input.error {
+border-color: red;
+}
+</style>
+  <!--  Fully Custom Form Input Settings  -->
+  <script>
+  var input = document.querySelector("#Phone");
+  var dialCode = document.querySelector(".dialCode");
+  var iti = intlTelInput(input, {
+  	preferredCountries: ["us", "de", "uk", "jp", "kr"],
+    initialCountry: "auto",
+    localizedCountries: null,
+    placeholderNumberType: 'FIXED_LINE',
+    geoIpLookup: function(callback) {
+      $.get('https://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+        var countryCode = (resp && resp.country) ? resp.country : "us";
+        callback(countryCode);
+      });
+    },
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.min.js"
+  });
+  var updateInputValue = function (event) {
+    input.value = "+" + iti.getSelectedCountryData().dialCode;
+  };
+  input.addEventListener('countrychange', updateInputValue, false);
+	$(document).ready(function() {
+  	$('select').niceSelect();
+	});
+var $form = $("#wf-form-Kickoff-Form");
+$.validator.addMethod("letters", function(value, element) {
+  return this.optional(element) || value == value.match(/^[a-zA-Z\s]*$/);
+});
+$form.validate({
+  rules: {
+    contactname: {
+      required: true,
+      minlength: 3,
+      letters: true
+    },
+    email: {
+      required: true,
+      email: true
+    },
+  },
+  messages: {
+    contactname: "Please specify your name",
+    youremail: "Please specify a valid email address",
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies" # Optional: if you need to install dependencies
+      # - npm install (if needed)
+  build:
+    commands:
+      - echo "Building the website"
+      # - npm run build (if needed)
+  post_build:
+    commands:
+      - echo "Preparing files for deployment"
+artifacts:
+  files:
+    - '**/*'           # Includes all files from the base-directory
+  base-directory: www   # Specifies that the 'www' folder is the root for artifacts
+  discard-paths: yes    # Flattens the directory structure, so files are placed at the S3 bucket root
