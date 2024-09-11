@@ -278,7 +278,7 @@
                         </div>
                         <div class="input-search-wrap">
                           <div id="loader" class="loader-div"><img loading="lazy" src="images/Frame-427322778-1.png" alt="" class="cover-image spin-image"></div>
-                          <div class="search-field-2"><img src="images/Group-3433996.svg" loading="lazy" alt="" class="image-198"><input spellcheck="false" class="input-search-copy search-field w-input" autocomplete="off" maxlength="256" name="Search-Input" scroll="disable" data-name="Search Input" placeholder="Search for your company" type="text" id="searchInput"></div>
+                          <div class="search-field-2"><img src="images/Group-3433996.svg" loading="lazy" alt="" class="image-198"><input spellcheck="false" id="inputSearch" class="input-search-copy search-field w-input" autocomplete="off" maxlength="256" name="Search-Input" scroll="disable" data-name="Search Input" placeholder="Search for your company" type="text" id="searchInput"></div>
                         </div>
                         <div class="popular-div">
                           <div class="h6-style full-white search-title">Popular</div>
@@ -328,12 +328,12 @@
                     <div class="text-16-22">or</div>
                     <div class="line"></div>
                   </div>
-                  <a href="#https://getstarstruck.com/signup" class="btn-yellow w-inline-block">
+                  <a id="search" class="btn-yellow w-inline-block">
                     <div>Get seen now</div>
                     <div id="star" class="w-embed"><svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.49853 0.801041C6.44787 0.71371 6.37516 0.641221 6.28767 0.59083C6.20019 0.540439 6.101 0.513916 6.00004 0.513916C5.89908 0.513916 5.79989 0.540439 5.7124 0.59083C5.62492 0.641221 5.5522 0.71371 5.50155 0.801041L3.93749 3.49694C3.88331 3.59018 3.8089 3.67007 3.71973 3.73071C3.63056 3.79136 3.52891 3.83121 3.42228 3.84732L0.490682 4.28992C-0.00147203 4.36483 -0.17436 4.98608 0.209451 5.30419L2.39302 7.1126C2.59473 7.2803 2.68981 7.54482 2.64083 7.80242L2.06972 10.802C2.04944 10.9086 2.05963 11.0186 2.09912 11.1196C2.1386 11.2206 2.20579 11.3085 2.29294 11.373C2.3801 11.4375 2.4837 11.4761 2.59183 11.4844C2.69995 11.4927 2.80822 11.4703 2.90419 11.4198L5.66464 9.9664C5.76806 9.91198 5.88317 9.88355 6.00004 9.88355C6.1169 9.88355 6.23201 9.91198 6.33544 9.9664L9.09588 11.4198C9.19185 11.4703 9.30012 11.4927 9.40825 11.4844C9.51638 11.4761 9.61997 11.4375 9.70713 11.373C9.79429 11.3085 9.86147 11.2206 9.90096 11.1196C9.94045 11.0186 9.95063 10.9086 9.93035 10.802L9.35925 7.80242C9.33504 7.67578 9.34527 7.54497 9.38885 7.42363C9.43244 7.3023 9.5078 7.19488 9.60705 7.1126L11.7912 5.30361C12.1744 4.98665 12.0015 4.36426 11.5088 4.28992L8.57837 3.84732C8.47164 3.83129 8.36988 3.79147 8.2806 3.73083C8.19133 3.67018 8.11682 3.59025 8.06259 3.49694L6.49853 0.801041Z" fill="currentColor"></path>
                       </svg></div>
-                  </a>
+                    </a>
                 </div>
               </div>
               <div class="line-under hide">
@@ -1426,6 +1426,10 @@ loadTolstoyVideo();
   });
 </script>
   <script>
+document.getElementById('search').addEventListener("click",function (){ 
+  document.getElementById('inputSearch').focus();
+  }
+)
   let searchTimeout;
   const inputElement = document.getElementById("searchInput");
   const companyBox = document.getElementById("company-box");
