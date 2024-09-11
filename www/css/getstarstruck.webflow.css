@@ -362,8 +362,8 @@ figcaption {
 }
 
 .section.overflow-hidden {
-  padding-top: 233px;
-  padding-bottom: 280px;
+  padding-top: 80px;
+  padding-bottom: 120px;
 }
 
 .section.overflow-hidden.your-all-in-one-place-to-every-marketplace {
@@ -430,8 +430,8 @@ figcaption {
 .section.video-2 {
   z-index: 2;
   background-color: #5e48db;
-  padding-top: 149px;
-  padding-bottom: 9rem;
+  padding-top: 140px;
+  padding-bottom: 80px;
   position: relative;
 }
 
@@ -8775,8 +8775,8 @@ figcaption {
 
 .section-discover {
   background-color: #fff;
-  padding-top: 400px;
-  padding-bottom: 139px;
+  padding-top: 240px;
+  padding-bottom: 60px;
 }
 
 .wrapper-discover {
@@ -8869,16 +8869,16 @@ figcaption {
 
 .section-reach {
   background-color: #fff;
-  padding-top: 145px;
-  padding-bottom: 295px;
+  padding-top: 80px;
+  padding-bottom: 120px;
 }
 
 .section-overspending {
   z-index: 1;
   background-color: #5e48db;
   width: 100%;
-  padding-top: 296px;
-  padding-bottom: 169px;
+  padding-top: 180px;
+  padding-bottom: 130px;
   position: relative;
 }
 
@@ -9249,8 +9249,8 @@ figcaption {
 }
 
 .section-attention {
-  padding-top: 400px;
-  padding-bottom: 269px;
+  padding-top: 300px;
+  padding-bottom: 80px;
   position: relative;
 }
 
@@ -9663,8 +9663,8 @@ figcaption {
 }
 
 .section-img {
-  padding-top: 320px;
-  padding-bottom: 200px;
+  padding-top: 260px;
+  padding-bottom: 120px;
 }
 
 .wrapper-img {
@@ -9850,8 +9850,8 @@ figcaption {
 }
 
 .section-marketplace {
-  padding-top: 300px;
-  padding-bottom: 300px;
+  padding-top: 40px;
+  padding-bottom: 140px;
 }
 
 .wrapper-marketplace {
@@ -11379,8 +11379,8 @@ figcaption {
   background-image: url('../images/Frame-1430105921-p-500.png');
   background-position: 50%;
   background-size: cover;
-  padding-top: 129px;
-  padding-bottom: 460px;
+  padding-top: 120px;
+  padding-bottom: 380px;
   position: relative;
 }
 
@@ -11640,7 +11640,7 @@ figcaption {
   }
 
   .section-discover {
-    padding-top: 600px;
+    padding-top: 240px;
   }
 
   .left-discover {
@@ -11832,7 +11832,7 @@ figcaption {
   }
 
   .section-discover {
-    padding-top: 600px;
+    padding-top: 300px;
   }
 
   .section-overspending {
@@ -11840,11 +11840,11 @@ figcaption {
   }
 
   .section-attention {
-    padding-top: 621px;
+    padding-top: 400px;
   }
 
   .section-img {
-    padding-top: 543px;
+    padding-top: 320px;
   }
 
   .div-block-50 {
@@ -11947,8 +11947,8 @@ figcaption {
   }
 
   .section.video-2 {
-    padding-top: 7rem;
-    padding-bottom: 5rem;
+    padding-top: 120px;
+    padding-bottom: 80px;
   }
 
   .container {
@@ -13242,8 +13242,8 @@ figcaption {
   }
 
   .section-discover {
-    padding-top: 300px;
-    padding-bottom: 90px;
+    padding-top: 160px;
+    padding-bottom: 40px;
   }
 
   .wrapper-discover {
@@ -13263,12 +13263,12 @@ figcaption {
   }
 
   .section-reach {
-    padding-top: 90px;
+    padding-top: 60px;
   }
 
   .section-overspending {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .wrapper-over {
@@ -13296,7 +13296,7 @@ figcaption {
 
   .section-attention {
     padding-top: 200px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
 
   .wrapper-attention {
@@ -13346,8 +13346,8 @@ figcaption {
   }
 
   .section-img {
-    padding-top: 189px;
-    padding-bottom: 91px;
+    padding-top: 180px;
+    padding-bottom: 80px;
   }
 
   .wrapper-test {
@@ -13458,7 +13458,7 @@ figcaption {
   }
 
   .section.video-2 {
-    padding-top: 5rem;
+    padding-top: 80px;
   }
 
   .container {
@@ -14602,8 +14602,8 @@ figcaption {
   }
 
   .section-discover {
-    padding-top: 200px;
-    padding-bottom: 60px;
+    padding-top: 120px;
+    padding-bottom: 30px;
   }
 
   .h2 {
@@ -14612,13 +14612,13 @@ figcaption {
   }
 
   .section-reach {
-    padding-top: 60px;
-    padding-bottom: 90px;
+    padding-top: 40px;
+    padding-bottom: 80px;
   }
 
   .section-overspending {
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
 
   .wrapper-over {
@@ -14688,7 +14688,7 @@ figcaption {
   }
 
   .section-6 {
-    padding-bottom: 300px;
+    padding-bottom: 280px;
     position: relative;
   }
 
@@ -14758,7 +14758,7 @@ figcaption {
   }
 
   .section.video-2 {
-    padding-bottom: 4rem;
+    padding-bottom: 60px;
   }
 
   .container.grid.hero.overflow-visible,
@@ -15801,11 +15801,11 @@ figcaption {
   }
 
   .section-reach {
-    padding-bottom: 140px;
+    padding-bottom: 60px;
   }
 
   .section-overspending {
-    padding-bottom: 130px;
+    padding-bottom: 80px;
   }
 
   .text-30-43.text-color-white-70.space-1 {
@@ -15825,7 +15825,7 @@ figcaption {
   }
 
   .section-attention {
-    padding-top: 160px;
+    padding-top: 80px;
   }
 
   .wrapper-attention {
@@ -15916,10 +15916,6 @@ figcaption {
   .collection-list {
     grid-column-gap: 24px;
     grid-row-gap: 24px;
-  }
-
-  .section-marketplace {
-    padding-top: 60px;
   }
 
   .middle-content {
@@ -16082,7 +16078,7 @@ figcaption {
   .section-6 {
     background-size: cover;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
   }
 
   .text-40-55-med {
