@@ -11046,7 +11046,7 @@ figcaption {
 }
 
 .item-logos {
-  grid-column-gap: 6px;
+  grid-column-gap: 3px;
   grid-row-gap: 6px;
   color: #01a0ea;
   background-color: #fff;
@@ -11083,7 +11083,7 @@ figcaption {
 }
 
 .item-logos-2 {
-  grid-column-gap: 6px;
+  grid-column-gap: 3px;
   grid-row-gap: 6px;
   color: #161614;
   background-color: #fff;
@@ -11102,7 +11102,7 @@ figcaption {
 }
 
 .item-logos-3 {
-  grid-column-gap: 6px;
+  grid-column-gap: 3px;
   grid-row-gap: 6px;
   color: #ff7a59;
   background-color: #fff;
